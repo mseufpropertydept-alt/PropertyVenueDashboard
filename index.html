@@ -1,60 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSEUF Property Department | Venue Availability & Booking</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSEUF Property Department | Venue Management</title>
     <link rel="icon" type="image/png" href="data:image/png;base64,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">
     <style>
         :root {
             --maroon: #7a1a1a;
             --gold: #f4c430;
-            --bg-primary: linear-gradient(135deg, #facece 0%, #7c0000 100%);
-            --bg-secondary: #f8fafc;
+            --bg-primary: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
             --card-bg: rgba(255, 255, 255, 0.95);
-            --card-bg-hover: rgba(255, 255, 255, 0.98);
-            --text-primary: #1e293b;
-            --text-secondary: #64748b;
-            --border-light: rgba(255, 255, 255, 0.2);
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-md: 0 10px 25px 0 rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 20px 40px 0 rgb(0 0 0 / 0.12);
+            --card-hover: rgba(255, 255, 255, 0.98);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-md: 0 10px 25px 0 rgb(0 0 0 / 0.15);
+            --shadow-lg: 0 25px 50px -12px rgb(0 0 0 / 0.25);
             --radius-sm: 12px;
             --radius-md: 20px;
-            --radius-lg: 24px;
-
-            --gym: linear-gradient(135deg, #8b0000, #a50000);
-            --court: linear-gradient(135deg, #d85a5a, #e57373);
-            --lounge: linear-gradient(135deg, #003366, #004488);
-            --twin: linear-gradient(135deg, #cc7a00, #e6991a);
+            --radius-lg: 28px;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
         }
 
         * { box-sizing: border-box; }
 
         body {
             margin: 0;
-            padding: 24px;
-            min-height: 100vh;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
-            line-height: 1.6;
+            display: flex;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
 
-        .container {
-            width: 100%;
-            max-width: 1300px;
-            margin: 0 auto;
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: var(--radius-lg);
+        /* ── Sidebar ──────────────────────────────────────────── */
+        .sidebar {
+            width: 260px;
+            background: linear-gradient(180deg, rgba(122,26,26,0.97) 0%, rgba(106,0,0,0.97) 100%);
+            color: white;
+            height: 100vh;
+            padding: 32px 20px;
+            position: fixed;
             box-shadow: var(--shadow-lg);
-            border: 1px solid var(--border-light);
+            border-right: 1px solid var(--glass-border);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .sidebar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 32px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .sidebar-brand img {
+            width: 46px;
+            height: 46px;
+            flex-shrink: 0;
+        }
+
+        .sidebar-brand-text {
+            line-height: 1.25;
+        }
+
+        .sidebar-university {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.75);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin: 0 0 2px 0;
+        }
+
+        .sidebar-logo {
+            font-size: 1.05rem;
+            font-weight: 800;
+            margin: 0;
+            background: linear-gradient(135deg, #fff, rgba(255,255,255,0.75));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.3;
+        }
+
+        .nav-item {
+            padding: 14px 18px;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: relative;
+            overflow: hidden;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .nav-item::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 4px;
+            background: var(--gold);
+            border-radius: 0 4px 4px 0;
+            transform: scaleY(0);
+            transition: transform 0.25s ease;
+        }
+
+        .nav-item:hover {
+            background: rgba(255,255,255,0.12);
+            color: white;
+            transform: translateX(6px);
+        }
+
+        .nav-item.active {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-item.active::before { transform: scaleY(1); }
+
+        .nav-icon { font-size: 1.1rem; flex-shrink: 0; }
+
+        /* ── Main content ─────────────────────────────────────── */
+        .main {
+            margin-left: 260px;
+            padding: 36px 40px;
+            width: calc(100vw - 260px);
+            min-height: 100vh;
+        }
+
+        .page { display: none; }
+        .page.active { display: block; }
+
+        .admin-footer {
+            text-align: center;
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.55);
+            margin-top: 12px;
+            padding: 16px 0;
+        }
+
+        /* ── Cards ────────────────────────────────────────────── */
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--glass-border);
+            margin-bottom: 28px;
             position: relative;
             overflow: hidden;
         }
 
-        .container::before {
+        .card::before {
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0;
@@ -62,675 +172,825 @@
             background: linear-gradient(90deg, var(--maroon), var(--gold));
         }
 
-        /* ── Official letterhead header ───────────────────────── */
-        .letterhead {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 8px;
-            flex-wrap: wrap;
-            text-align: center;
-        }
-
-        .letterhead img {
-            width: 72px;
-            height: 72px;
-            flex-shrink: 0;
-        }
-
-        .letterhead-text {
-            text-align: left;
-        }
-
-        .letterhead-university {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--maroon);
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            margin: 0;
-        }
-
-        .letterhead-tagline {
-            font-size: 0.7rem;
-            color: var(--text-secondary);
-            margin: 2px 0 0 0;
-            font-style: italic;
-        }
-
-        h2 {
-            text-align: center;
-            background: linear-gradient(135deg, var(--maroon), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-size: clamp(1.5rem, 3.6vw, 2.2rem);
-            font-weight: 800;
-            margin: 4px 0 6px 0;
-            letter-spacing: -0.02em;
-        }
-
-        .system-subtitle {
-            text-align: center;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
+        .card-title {
             margin: 0 0 24px 0;
-            font-weight: 500;
+            font-weight: 800;
+            color: var(--maroon);
+            font-size: 1.5rem;
         }
 
-        .policy-note {
-            background: rgba(122, 26, 26, 0.04);
-            border-left: 3px solid var(--maroon);
-            border-radius: 8px;
-            padding: 12px 16px;
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            margin-bottom: 28px;
-            line-height: 1.6;
-        }
-
-        .policy-note strong { color: var(--maroon); }
-
-        /* ── Official footer ──────────────────────────────────── */
-        .official-footer {
-            text-align: center;
-            color: rgba(255,255,255,0.95);
-            margin-top: 32px;
-            padding-top: 24px;
-            border-top: 1px solid rgba(255,255,255,0.25);
-        }
-
-        .official-footer .footer-dept {
-            font-weight: 700;
-            font-size: 0.9rem;
-            margin-bottom: 4px;
-        }
-
-        .official-footer .footer-contact {
-            font-size: 0.78rem;
-            opacity: 0.9;
-            margin-bottom: 8px;
-        }
-
-        .official-footer .footer-meta {
-            font-size: 0.7rem;
-            opacity: 0.7;
-        }
-
-        .legend {
-            display: flex;
-            justify-content: center;
+        /* ── Stats grid ───────────────────────────────────────── */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 16px;
-            flex-wrap: wrap;
-            margin-bottom: 32px;
+            margin-bottom: 28px;
         }
 
-        .legend span {
-            padding: 8px 16px;
+        .stat-card {
+            background: white;
+            padding: 24px 20px;
             border-radius: var(--radius-md);
-            color: white;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--glass-border);
+            transition: transform 0.25s ease;
+        }
+
+        .stat-card:hover { transform: translateY(-4px); }
+
+        .stat-value {
+            font-size: 2.25rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-secondary);
+        }
+
+        .stat-quarter {
+            background: white;
+            padding: 14px 20px;
+            border-radius: var(--radius-sm);
+            border-left: 4px solid var(--maroon);
             font-size: 0.875rem;
             font-weight: 600;
-            box-shadow: var(--shadow-md);
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 24px;
-            margin-bottom: 32px;
-            flex-wrap: wrap;
-        }
-
-        .nav-btn {
-            padding: 12px 24px;
-            border-radius: var(--radius-md);
-            border: 2px solid transparent;
-            background: rgba(255,255,255,0.9);
-            color: var(--maroon);
-            font-weight: 700;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            min-height: 48px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
             box-shadow: var(--shadow-sm);
-            position: relative;
-            overflow: hidden;
         }
 
-        .nav-btn::before {
-            content: '';
-            position: absolute;
-            top: 0; left: -100%;
-            width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: left 0.5s;
+        .stat-quarter strong { color: var(--maroon); }
+
+        /* ── Calendar ─────────────────────────────────────────── */
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
         }
 
-        .nav-btn:hover {
-            background: var(--maroon);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--gold);
-        }
-
-        .nav-btn:hover::before { left: 100%; }
-
-        #monthLabel {
-            font-size: clamp(1.25rem, 3vw, 1.75rem);
+        .cal-month-label {
+            font-size: 1.5rem;
             font-weight: 800;
-            background: linear-gradient(135deg, var(--maroon), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: -0.02em;
+            color: var(--maroon);
         }
 
-        /* ── Calendar: 7-col at all sizes; abbreviate headers on mobile ── */
-        .calendar {
+        .calendar-grid {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
-            gap: 12px;
+            gap: 10px;
         }
 
-        .day-header {
+        .day-name {
             text-align: center;
-            padding: 16px 8px;
-            background: rgba(255,255,255,0.7);
-            border-radius: var(--radius-sm);
             font-weight: 700;
+            font-size: 0.8rem;
             color: var(--maroon);
-            font-size: 0.95rem;
+            padding: 12px 6px;
+            background: rgba(122,26,26,0.06);
+            border-radius: var(--radius-sm);
             letter-spacing: 0.05em;
-            border: 1px solid rgba(2, 0, 0, 0.3);
+            text-transform: uppercase;
         }
 
-        .day {
-            min-height: 140px;
-            background: rgba(255,255,255,0.8);
-            padding: 16px 12px;
+        .cal-day {
+            background: rgba(255,255,255,0.85);
+            border: 1px solid rgba(226,232,240,0.8);
+            padding: 14px 10px;
             border-radius: var(--radius-md);
-            border: 1px solid rgba(255,255,255,0.4);
-            display: flex;
-            flex-direction: column;
+            min-height: 130px;
             cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
         }
 
-        .day::before {
+        .cal-day::before {
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0;
             height: 3px;
             background: var(--gold);
             transform: scaleX(0);
-            transition: transform 0.3s ease;
+            transition: transform 0.25s ease;
         }
 
-        .day:hover:not(.closed) {
-            transform: translateY(-4px) scale(1.02);
-            background: var(--card-bg-hover);
+        .cal-day:hover {
+            transform: translateY(-5px);
             box-shadow: var(--shadow-lg);
-            border-color: rgba(244, 196, 48, 0.3);
-        }
-
-        .day:hover:not(.closed)::before { transform: scaleX(1); }
-
-        .day strong {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 4px;
-            color: var(--text-primary);
-        }
-
-        /* ── FIX #8: Available label ── */
-        .day-available-label {
-            font-size: 0.7rem;
-            color: #94a3b8;
-            font-weight: 500;
-            margin-bottom: 4px;
-        }
-
-        .closed {
-            background: rgba(226, 232, 240, 0.6) !important;
-            color: #94a3b8 !important;
-            cursor: not-allowed !important;
-            border-color: #cbd5e1 !important;
-        }
-
-        .event {
-            margin-top: 6px;
-            padding: 7px 10px;
-            border-radius: var(--radius-sm);
-            color: white;
-            font-size: 0.72rem;
-            font-weight: 600;
-            line-height: 1.4;
-            transition: all 0.2s ease;
-            cursor: pointer;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            border: 1px solid rgba(255,255,255,0.2);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .event:hover {
-            transform: translateY(-2px) scale(1.05);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-        }
-
-        /* ── Modals ── */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            justify-content: center;
-            align-items: center;
-            background: rgba(0,0,0,0.7);
-            z-index: 1000;
-            padding: 20px;
-            backdrop-filter: blur(8px);
-        }
-
-        .modal-box {
-            background: var(--card-bg);
-            border-radius: var(--radius-lg);
-            width: 100%;
-            max-width: 480px;
-            padding: 32px;
-            box-shadow: var(--shadow-lg);
-            border: 1px solid var(--border-light);
-            max-height: 90vh;
-            overflow-y: auto;
-            position: relative;
-        }
-
-        .modal-box h3 {
-            margin: 0 0 16px 0;
-            color: var(--maroon);
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        .modal-box input,
-        .modal-box select {
-            font-size: 1rem;
-            padding: 14px 16px;
-            width: 100%;
-            margin-top: 8px;
-            border-radius: var(--radius-sm);
-            border: 2px solid #e2e8f0;
-            background: rgba(255,255,255,0.9);
-            transition: all 0.2s ease;
-            font-family: inherit;
-        }
-
-        .modal-box input:focus,
-        .modal-box select:focus {
-            outline: none;
-            border-color: var(--gold);
-            box-shadow: 0 0 0 3px rgba(244,196,48,0.1);
+            border-color: rgba(244,196,48,0.4);
             background: white;
         }
 
-        label {
-            font-size: 0.875rem;
-            font-weight: 600;
+        .cal-day:hover::before { transform: scaleX(1); }
+
+        .cal-day strong {
+            font-size: 1.1rem;
+            font-weight: 800;
             color: var(--text-primary);
-            margin-top: 12px;
-            display: block;
         }
 
-        .btn-submit, .btn-cancel {
-            font-size: 1rem;
-            padding: 14px 24px;
-            min-height: 52px;
-            cursor: pointer;
-            border-radius: var(--radius-md);
+        .cal-day.today { border: 2px solid var(--gold); }
+
+        .cal-day.sunday {
+            background: rgba(226,232,240,0.5);
+            cursor: default;
+            opacity: 0.7;
+        }
+
+        .cal-day.sunday:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* ── Event chips ──────────────────────────────────────── */
+        .event-chip {
+            font-size: 0.7rem;
+            padding: 6px 9px;
+            border-radius: 8px;
+            color: white;
             font-weight: 700;
-            font-family: inherit;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            margin-top: 12px;
-            border: none;
-            position: relative;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.25);
+            line-height: 1.3;
+            white-space: nowrap;
             overflow: hidden;
+            text-overflow: ellipsis;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .btn-submit {
+        .event-chip:hover {
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 5px 14px rgba(0,0,0,0.3);
+        }
+
+        /* Venue colours — match public site */
+        .chip-UniversityGym    { background: linear-gradient(135deg, #8b0000, #a50000); }
+        .chip-BEDCoveredCourt  { background: linear-gradient(135deg, #d85a5a, #e57373); }
+        .chip-StudentLounge    { background: linear-gradient(135deg, #003366, #004488); }
+        .chip-TwinCourt        { background: linear-gradient(135deg, #cc7a00, #e6991a); }
+
+        /* ── Table ────────────────────────────────────────────── */
+        .table-wrap { overflow-x: auto; }
+
+        /* ── Table toolbar: search, status filter, export ────── */
+        .table-toolbar {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .table-search {
+            flex: 1 1 240px;
+            min-width: 0;
+        }
+
+        .status-filter {
+            flex: 0 0 180px;
+        }
+
+        #exportCsvBtn {
+            flex-shrink: 0;
+        }
+
+        /* ── Sortable column headers ──────────────────────────── */
+        th.sortable {
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.15s ease;
+        }
+
+        th.sortable:hover {
+            background: rgba(122,26,26,0.08);
+        }
+
+        .sort-arrow {
+            display: inline-block;
+            font-size: 0.7rem;
+            margin-left: 4px;
+            color: var(--maroon);
+            opacity: 0.5;
+        }
+
+        .sort-arrow.active { opacity: 1; }
+
+        @media (max-width: 600px) {
+            .table-toolbar { flex-direction: column; align-items: stretch; }
+            .status-filter { flex: 1; }
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        th {
+            text-align: left;
+            padding: 16px 14px;
+            background: rgba(122,26,26,0.04);
+            color: var(--text-secondary);
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        td {
+            padding: 16px 14px;
+            font-size: 0.9rem;
+            border-bottom: 1px solid rgba(226,232,240,0.6);
+            vertical-align: middle;
+        }
+
+        tr:last-child td { border-bottom: none; }
+        tr:hover td { background: rgba(244,196,48,0.04); }
+
+        .status-pill {
+            display: inline-block;
+            padding: 5px 14px;
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            white-space: nowrap;
+        }
+
+        .status-PENDING         { background:#fef3c7; color:#92400e; }
+        .status-APPROVED        { background:#dcfce7; color:#166534; }
+        .status-REJECTED        { background:#fee2e2; color:#991b1b; }
+        .status-CANCELLED       { background:#f1f5f9; color:#64748b; }
+        .status-RESCHED_PENDING {
+            background: linear-gradient(135deg, #fff7ed, #fed7aa);
+            color: #c2410c;
+            border: 1.5px solid #fdba74;
+            animation: reschedPulse 2s infinite;
+        }
+
+        @keyframes reschedPulse {
+            0%,100% { box-shadow: 0 0 0 0 rgba(245,158,11,0); }
+            50%     { box-shadow: 0 0 0 4px rgba(245,158,11,0.25); }
+        }
+
+        .resched-note {
+            font-size: 0.75rem;
+            color: #c2410c;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .action-group {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        /* ── Buttons ──────────────────────────────────────────── */
+        .btn {
+            padding: 12px 20px;
+            border-radius: var(--radius-md);
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.9rem;
+            font-family: inherit;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 44px;
+            white-space: nowrap;
+        }
+
+        .btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none !important; }
+
+        .btn-primary {
             background: linear-gradient(135deg, var(--maroon), #a52727);
             color: white;
+            box-shadow: var(--shadow-sm);
             width: 100%;
-            box-shadow: var(--shadow-md);
         }
 
-        .btn-submit:hover:not(:disabled) {
+        .btn-primary:hover:not(:disabled) {
             transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-md);
             background: linear-gradient(135deg, #a52727, #c53030);
         }
 
-        .btn-submit:disabled {
-            opacity: 0.65;
-            cursor: not-allowed;
-        }
-
-        .btn-cancel {
-            background: transparent;
+        .btn-secondary {
+            background: white;
             color: var(--text-secondary);
-            width: 100%;
             border: 2px solid #e2e8f0;
+            width: 100%;
         }
 
-        .btn-cancel:hover {
-            background: #f8fafc;
+        .btn-secondary:hover {
             border-color: var(--maroon);
             color: var(--maroon);
             transform: translateY(-1px);
         }
 
-        /* ── Loader ── */
-        #loader {
+        .btn-icon {
+            padding: 7px 12px;
+            min-height: 34px;
+            font-size: 0.78rem;
+            border-radius: 10px;
+            width: auto;
+        }
+
+        .btn-approve  { background: #16a34a; color: white; }
+        .btn-approve:hover  { background: #15803d; transform: translateY(-1px); }
+        .btn-reject   { background: #dc2626; color: white; }
+        .btn-reject:hover   { background: #b91c1c; transform: translateY(-1px); }
+        .btn-resched  { background: #d97706; color: white; }
+        .btn-resched:hover  { background: #b45309; transform: translateY(-1px); }
+        .btn-cancel-red { background: #ef4444; color: white; }
+        .btn-cancel-red:hover { background: #dc2626; transform: translateY(-1px); }
+
+        .btn-nav {
+            background: white;
+            color: var(--maroon);
+            border: 2px solid transparent;
+            padding: 10px 20px;
+            width: auto;
+            min-height: 42px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-nav:hover {
+            background: var(--maroon);
+            color: white;
+            border-color: var(--gold);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* ── Modals ───────────────────────────────────────────── */
+        .modal-overlay {
             position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(255,255,255,0.95);
+            inset: 0;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0,0,0,0.65);
+            z-index: 1000;
+            padding: 20px;
+            backdrop-filter: blur(8px);
+        }
+
+        .modal-overlay.open { display: flex; }
+
+        .modal-box {
+            background: var(--card-bg);
+            padding: 36px;
+            border-radius: var(--radius-lg);
+            width: 100%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--glass-border);
+            position: relative;
+        }
+
+        .modal-box::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--maroon), var(--gold));
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        }
+
+        .modal-title {
+            color: var(--maroon);
+            font-weight: 800;
+            font-size: 1.35rem;
+            margin: 0 0 6px 0;
+        }
+
+        .modal-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin: 0 0 24px 0;
+        }
+
+        .modal-section-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-secondary);
+            margin: 20px 0 8px 0;
+        }
+
+        .field-label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+            margin-top: 16px;
+        }
+
+        .field-label:first-of-type { margin-top: 0; }
+
+        input, select {
+            width: 100%;
+            padding: 13px 16px;
+            margin-bottom: 0;
+            border-radius: var(--radius-sm);
+            border: 2px solid #e2e8f0;
+            background: rgba(255,255,255,0.9);
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: var(--text-primary);
+            transition: all 0.2s ease;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(244,196,48,0.15);
+            background: white;
+        }
+
+        .equipment-grid {
+            background: rgba(248,250,252,0.9);
+            padding: 20px;
+            border-radius: var(--radius-sm);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 8px;
+        }
+
+        .eq-row label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--maroon);
+            margin-bottom: 6px;
+        }
+
+        .eq-row input {
+            margin-bottom: 0;
+        }
+
+        .modal-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 24px;
+        }
+
+        /* Detail rows inside event modal */
+        .detail-row {
+            display: flex;
+            gap: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(226,232,240,0.6);
+            font-size: 0.9rem;
+        }
+
+        .detail-row:last-of-type { border-bottom: none; }
+
+        .detail-key {
+            font-weight: 700;
+            color: var(--text-secondary);
+            min-width: 100px;
+            flex-shrink: 0;
+        }
+
+        .detail-val { color: var(--text-primary); }
+
+        .eq-list {
+            background: rgba(248,250,252,0.8);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        /* Reschedule modal */
+        #reschedModal .modal-box { max-width: 420px; }
+
+        /* ── Loader overlay ───────────────────────────────────── */
+        #globalLoader {
+            position: fixed;
+            inset: 0;
+            background: rgba(255,255,255,0.92);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             z-index: 2000;
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(16px);
             transition: opacity 0.3s ease;
         }
 
-        #loader.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        /* ── FIX #12: error state inside loader ── */
-        #loaderError {
-            display: none;
-            color: #c0392b;
-            font-weight: 700;
-            font-size: 1rem;
-            text-align: center;
-            padding: 0 24px;
-        }
-
-        #loaderError button {
-            margin-top: 12px;
-            padding: 10px 24px;
-            background: var(--maroon);
-            color: white;
-            border: none;
-            border-radius: var(--radius-sm);
-            font-size: 0.95rem;
-            font-weight: 700;
-            cursor: pointer;
-        }
+        #globalLoader.hidden { opacity: 0; pointer-events: none; }
 
         .spinner {
-            width: 56px;
-            height: 56px;
-            border: 4px solid rgba(122, 26, 26, 0.1);
-            border-top: 4px solid var(--maroon);
+            width: 52px; height: 52px;
+            border: 4px solid rgba(122,26,26,0.12);
+            border-top-color: var(--maroon);
             border-radius: 50%;
-            animation: spin 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+            animation: spin 0.9s linear infinite;
         }
 
-        @keyframes spin { 100% { transform: rotate(360deg); } }
+        @keyframes spin { to { transform: rotate(360deg); } }
 
-        /* ── Auth gate for cancel / reschedule (FIX #4) ── */
-        #authGate {
-            background: #fff8f8;
-            border: 1px solid #f5c6c6;
-            border-radius: var(--radius-sm);
-            padding: 16px;
-            margin-bottom: 16px;
-        }
-
-        #authGate p {
-            margin: 0 0 8px 0;
-            font-size: 0.875rem;
+        #loaderMsg {
+            margin-top: 16px;
             color: var(--maroon);
-            font-weight: 600;
-        }
-
-        #authGate input {
-            width: 100%;
-            padding: 10px 14px;
-            border-radius: var(--radius-sm);
-            border: 2px solid #e2e8f0;
-            font-size: 0.95rem;
-            font-family: inherit;
-            margin-bottom: 8px;
-        }
-
-        #authGate input:focus {
-            outline: none;
-            border-color: var(--gold);
-        }
-
-        #authGate button {
-            padding: 10px 20px;
-            background: var(--maroon);
-            color: white;
-            border: none;
-            border-radius: var(--radius-sm);
             font-weight: 700;
-            font-size: 0.875rem;
-            cursor: pointer;
-            font-family: inherit;
+            font-size: 1rem;
         }
 
-        /* ── Responsive: keep 7 columns, shrink content ── */
+        /* ── Toast ────────────────────────────────────────────── */
+        #toast {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            padding: 14px 22px;
+            border-radius: var(--radius-sm);
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: var(--shadow-lg);
+            z-index: 3000;
+            transform: translateY(80px);
+            opacity: 0;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            max-width: 340px;
+        }
+
+        #toast.show { transform: translateY(0); opacity: 1; }
+        #toast.success { background: #16a34a; }
+        #toast.error   { background: #dc2626; }
+        #toast.info    { background: #2563eb; }
+
+        /* ── Responsive ───────────────────────────────────────── */
+        @media (max-width: 1100px) {
+            .sidebar { width: 72px; padding: 28px 12px; }
+            .sidebar-brand { justify-content: center; border-bottom: none; margin-bottom: 16px; padding-bottom: 0; }
+            .sidebar-brand-text, .nav-label { display: none; }
+            .main { margin-left: 72px; width: calc(100vw - 72px); padding: 24px 20px; }
+            .nav-item { justify-content: center; gap: 0; padding: 14px; }
+        }
+
         @media (max-width: 768px) {
-            body { padding: 12px; }
-            .container { padding: 20px 12px; }
-            .calendar { gap: 6px; }
-            .day { min-height: 90px; padding: 8px 6px; }
-            .day strong { font-size: 0.85rem; }
-            .day-header { padding: 10px 4px; font-size: 0.7rem; letter-spacing: 0; }
-            .day-available-label { display: none; }
-            .event { font-size: 0.65rem; padding: 5px 7px; }
-            .legend { gap: 8px; }
-            .controls { gap: 12px; flex-direction: column; }
-            .nav-btn { width: 140px; }
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: relative; flex-direction: row; padding: 14px 16px; gap: 6px; }
+            .sidebar-brand { display: none; }
+            .nav-item { margin-bottom: 0; flex: 1; justify-content: center; padding: 10px; }
+            .main { margin-left: 0; width: 100%; padding: 16px; }
+            .calendar-grid { gap: 6px; }
+            .cal-day { min-height: 90px; padding: 10px 6px; }
+            .cal-day strong { font-size: 0.85rem; }
+            .day-name { font-size: 0.65rem; padding: 8px 4px; }
         }
 
-        @media (max-width: 400px) {
-            .day-header { font-size: 0.6rem; }
-            .day strong { font-size: 0.75rem; }
-        }
-
-        footer {
-            text-align: center;
-            font-size: 0.875rem;
-            color: rgba(255,255,255,0.9);
-            margin-top: 32px;
-            padding-top: 24px;
-            border-top: 1px solid rgba(255,255,255,0.2);
-        }
-
-        #eventDetailsModal .modal-box h4 {
-            color: var(--maroon);
-            margin: 20px 0 12px 0;
-            font-size: 1.125rem;
+        @media (max-width: 480px) {
+            .card { padding: 20px 16px; }
+            .modal-box { padding: 24px 18px; }
+            th, td { padding: 10px 8px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
 <body>
 
-<div id="loader">
-    <div class="spinner" id="loaderSpinner"></div>
-    <p id="loaderText" style="margin-top:16px; color:var(--maroon); font-weight:700; font-size:1.1rem;">Loading venue availability...</p>
-    <div id="loaderError">
-        <p>⚠️ Failed to load calendar data.</p>
-        <p style="font-weight:400; color:#555; margin-top:4px;">Check your connection and try again.</p>
-        <button onclick="retryInit()">Retry</button>
-    </div>
+<!-- ── Global loader ──────────────────────────────────────────── -->
+<div id="globalLoader">
+    <div class="spinner"></div>
+    <p id="loaderMsg">Loading dashboard...</p>
 </div>
 
-<div class="container">
-    <div class="letterhead">
+<!-- ── Toast notification ─────────────────────────────────────── -->
+<div id="toast"></div>
+
+<!-- ── Sidebar ────────────────────────────────────────────────── -->
+<div class="sidebar">
+    <div class="sidebar-brand">
         <img src="data:image/png;base64,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" alt="MSEUF Official Seal">
-        <div class="letterhead-text">
-            <p class="letterhead-university">Manuel S. Enverga University Foundation</p>
-            <p class="letterhead-tagline">For God and Country &middot; Lucena City, Philippines &middot; Est. 1947</p>
+        <div class="sidebar-brand-text">
+            <p class="sidebar-university">MSEUF</p>
+            <p class="sidebar-logo">PROPERTY<br>DASHBOARD</p>
         </div>
     </div>
-    <h2>Venue Availability &amp; Pre-Booking System</h2>
-    <p class="system-subtitle">Office of the Property Department</p>
-
-    <div class="policy-note">
-        <strong>Pre-Booking Policy:</strong> All venue reservation requests must be submitted at least <b>ten (10) days</b> prior to the scheduled event date. Please note that <b>Sundays are not available for booking</b>.
-All requests are subject to venue availability and must undergo final approval by the Property Department. Applicants will receive an email notification once their request has been reviewed.
-Furthermore, <b>Institutional events are given priority</b>. Non-institutional events may be subject to adjustment or rescheduling depending on availability and institutional requirements.
+    <div class="nav-item active" onclick="showPage('calendarPage', this)">
+        <span class="nav-icon">📅</span><span class="nav-label">Calendar</span>
     </div>
-
-    <div class="legend">
-        <span style="background:var(--gym)">University Gym</span>
-        <span style="background:var(--court)">BED Covered Court</span>
-        <span style="background:var(--lounge)">Student Lounge</span>
-        <span style="background:var(--twin)">Twin Court</span>
+    <div class="nav-item" onclick="showPage('adminPage', this)">
+        <span class="nav-icon">📊</span><span class="nav-label">Reservations</span>
     </div>
-
-    <div style="display:flex; justify-content:center; margin-bottom:24px;">
-        <button class="nav-btn" onclick="openMyBookingsModal()">🔍 Look Up My Bookings</button>
+    <div class="nav-item" onclick="showPage('formsPage', this)">
+        <span class="nav-icon">📝</span><span class="nav-label">Borrower Forms</span>
     </div>
-
-    <div class="controls">
-        <button class="nav-btn" onclick="changeMonth(-1)">⏮ Prev</button>
-        <span id="monthLabel"></span>
-        <button class="nav-btn" onclick="changeMonth(1)">Next ⏭</button>
-    </div>
-
-    <div class="calendar" id="calendar"></div>
 </div>
 
-<!-- Booking Request Modal -->
-<div id="modal" class="modal">
+<!-- ── Main ───────────────────────────────────────────────────── -->
+<div class="main">
+
+    <!-- Calendar page -->
+    <div id="calendarPage" class="page active">
+        <div class="card">
+            <div class="calendar-header">
+                <button class="btn btn-nav" onclick="changeMonth(-1)">⏮ Prev</button>
+                <span class="cal-month-label" id="monthLabel"></span>
+                <button class="btn btn-nav" onclick="changeMonth(1)">Next ⏭</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+        </div>
+    </div>
+
+    <!-- Admin / Reservations page -->
+    <div id="adminPage" class="page">
+        <div id="statsSection">
+            <!-- Populated by loadAdmin() -->
+        </div>
+        <div class="card">
+            <h2 class="card-title">Reservations</h2>
+
+            <!-- Filter toolbar -->
+            <div class="table-toolbar">
+                <input
+                    type="text"
+                    id="tableSearch"
+                    class="table-search"
+                    placeholder="Search by event, requester, or venue…"
+                    oninput="applyTableFilters()"
+                >
+                <select id="statusFilter" class="status-filter" onchange="applyTableFilters()">
+                    <option value="">All statuses</option>
+                    <option value="PENDING">Pending</option>
+                    <option value="APPROVED">Approved</option>
+                    <option value="REJECTED">Rejected</option>
+                    <option value="CANCELLED">Cancelled</option>
+                    <option value="RESCHED_PENDING">Resched Pending</option>
+                </select>
+                <button class="btn btn-nav" id="exportCsvBtn" onclick="exportReservationsCsv()">⬇ Export CSV</button>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="sortable" data-sort="date" onclick="setSort('date')">Date <span class="sort-arrow" id="sortArrow-date"></span></th>
+                            <th class="sortable" data-sort="subject" onclick="setSort('subject')">Event / Requester <span class="sort-arrow" id="sortArrow-subject"></span></th>
+                            <th class="sortable" data-sort="venue" onclick="setSort('venue')">Venue <span class="sort-arrow" id="sortArrow-venue"></span></th>
+                            <th class="sortable" data-sort="status" onclick="setSort('status')">Status <span class="sort-arrow" id="sortArrow-status"></span></th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminTable">
+                        <tr><td colspan="5" style="text-align:center; color:var(--text-secondary); padding:32px;">
+                            Loading reservations…
+                        </td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forms page -->
+    <div id="formsPage" class="page">
+        <div class="card">
+            <h2 class="card-title">Borrower Forms & Downloads</h2>
+            <p style="color:var(--text-secondary);">Access and manage equipment request forms here.</p>
+            <a href="https://mseufeduph-my.sharepoint.com/:x:/g/personal/property_mseuf_edu_ph/IQAYZ4jDAdGdR5Srw6116kZ9ATPwf32jaAXDUkbxC4L1VXg?e=BHm9OG"
+                   style="background:#8b0000; color:white; padding:10px 15px;
+                          text-decoration:none; border-radius:4px; display:inline-block;">
+                  Borrowers Form
+                </a>
+        </div>
+    </div>
+
+    <footer class="admin-footer">
+        Manuel S. Enverga University Foundation &middot; Property Department Internal System
+        &middot; For authorized personnel only
+    </footer>
+
+</div>
+
+<!-- ── New Reservation Modal ──────────────────────────────────── -->
+<div id="bookingModal" class="modal-overlay">
     <div class="modal-box">
-        <h3>Booking Request</h3>
-        <p id="selectedDateLabel" style="color:#64748b; font-size:0.95rem; margin-bottom:16px;"></p>
-        <label for="name">Full Name</label>
-        <input id="name" placeholder="Requester's Full Name" autocomplete="name">
-        <label for="subject">Event Title</label>
-        <input id="subject" placeholder="Event Title">
-        <label for="email">MSEUF Email Address</label>
-        <input id="email" type="email" placeholder="you@mseuf.edu.ph" autocomplete="email">
-        <label for="phone">Contact Number</label>
-        <input id="phone" type="tel" placeholder="09XXXXXXXXX" autocomplete="tel" maxlength="13">
-        <label for="venueSelect">Venue</label>
-        <select id="venueSelect"></select>
-        <label for="timeSelect">Time Slot</label>
-        <select id="timeSelect">
+        <h3 class="modal-title">New Reservation</h3>
+        <p class="modal-subtitle" id="bookingDateLabel"></p>
+
+        <label class="field-label" for="inp-name">Requester's Full Name</label>
+        <input id="inp-name" placeholder="Full Name" autocomplete="name">
+
+        <label class="field-label" for="inp-subject">Event Title</label>
+        <input id="inp-subject" placeholder="Event Title">
+
+        <label class="field-label" for="inp-email">MSEUF Email</label>
+        <input id="inp-email" type="email" placeholder="you@mseuf.edu.ph" autocomplete="email">
+
+        <label class="field-label" for="inp-phone">Contact Number</label>
+        <input id="inp-phone" type="tel" placeholder="09XXXXXXXXX" autocomplete="tel" maxlength="13">
+
+        <label class="field-label" for="inp-venue">Venue</label>
+        <select id="inp-venue"></select>
+
+        <label class="field-label" for="inp-time">Time Slot</label>
+        <select id="inp-time">
             <option value="AM">AM (8:00 AM – 12:00 PM)</option>
             <option value="PM">PM (1:00 PM – 5:00 PM)</option>
             <option value="WHOLE">Whole Day (8:00 AM – 5:00 PM)</option>
         </select>
-        <h4 style="margin-top:20px; color:var(--maroon); font-weight:700;">Equipment Needed</h4>
-        <div id="equipmentInputs"></div>
-        <button class="btn-submit" id="submitBookingBtn" onclick="submitBooking()">Submit Request</button>
-        <button class="btn-cancel" onclick="closeModal()">Cancel</button>
-    </div>
-</div>
 
-<!-- Event Details Modal -->
-<div id="eventDetailsModal" class="modal">
-    <div class="modal-box">
-        <h3>Event Details</h3>
+        <p class="modal-section-label">Equipment Required</p>
+        <div id="equipmentInputs" class="equipment-grid"></div>
 
-        <!-- Auth gate — requester must provide BOTH their email AND the
-             Booking ID that was sent to them privately via the confirmation
-             email. The Booking ID is never shown on the public calendar. -->
-        <div id="authGate">
-            <p>🔒 Enter your booking email and Booking ID (sent to you via email) to manage this booking</p>
-            <input type="email" id="authEmail" placeholder="Your booking email (e.g. you@mseuf.edu.ph)">
-            <input type="text" id="authBookingId" placeholder="Booking ID (e.g. BK-4821)" style="margin-top:6px;">
-            <button id="verifyBtn" onclick="verifyOwnership()">Verify</button>
-            <p id="authError" style="color:#c0392b; font-size:0.8rem; margin-top:6px; display:none;">Email or Booking ID does not match our records.</p>
-        </div>
-
-        <div id="detailContent"></div>
-
-        <button id="cancelBtn" class="btn-submit"
-            style="background:linear-gradient(135deg,#e74c3c,#f56565); display:none;"
-            onclick="showCancelForm()">Cancel Booking</button>
-
-        <button id="rescheduleBtn" class="btn-submit"
-            style="background:linear-gradient(135deg,var(--gold),#f4d03f); color:#333; display:none;"
-            onclick="showRescheduleForm()">Request Reschedule</button>
-
-        <button class="btn-cancel" onclick="closeDetails()">Close</button>
-
-        <!-- Cancellation reason form — shown after tapping "Cancel Booking" -->
-        <div id="cancelForm" style="display:none; margin-top:20px; border-top:2px solid #e2e8f0; padding-top:20px;">
-            <h4 style="color:#c0392b;">Cancel This Booking</h4>
-            <label for="cancelReason">Reason for cancellation</label>
-            <input type="text" id="cancelReason" placeholder="e.g. Event postponed, no longer needed, schedule conflict…">
-            <button class="btn-submit" id="cancelSubmitBtn"
-                style="background:linear-gradient(135deg,#e74c3c,#f56565);"
-                onclick="handleModalCancellation(this)">Confirm Cancellation</button>
-        </div>
-
-        <div id="rescheduleForm" style="display:none; margin-top:20px; border-top:2px solid #e2e8f0; padding-top:20px;">
-            <h4 style="color:var(--maroon);">Request New Schedule</h4>
-            <label for="reschedDate">New Date</label>
-            <input type="date" id="reschedDate">
-            <label for="reschedTime" style="margin-top:12px;">Preferred Time</label>
-            <select id="reschedTime">
-                <option value="AM">AM (8:00 AM – 12:00 PM)</option>
-                <option value="PM">PM (1:00 PM – 5:00 PM)</option>
-                <option value="WHOLE">Whole Day</option>
-            </select>
-            <label for="reschedReason" style="margin-top:12px;">Reason for rescheduling</label>
-            <input type="text" id="reschedReason" placeholder="e.g. Venue conflict, change in event date…">
-            <button class="btn-submit" id="reschedSubmitBtn"
-                style="background:linear-gradient(135deg,var(--gold),#f4d03f); color:#333;"
-                onclick="submitRescheduleRequest(this)">Send Request</button>
+        <div class="modal-actions">
+            <button class="btn btn-primary" id="submitBookingBtn" onclick="submitBooking()">Submit Booking</button>
+            <button class="btn btn-secondary" onclick="closeModal('bookingModal')">Cancel</button>
         </div>
     </div>
 </div>
 
-<!-- My Bookings Lookup Modal -->
-<div id="myBookingsModal" class="modal">
+<!-- ── Event Detail Modal ─────────────────────────────────────── -->
+<div id="eventModal" class="modal-overlay">
     <div class="modal-box">
-        <h3>Look Up My Bookings</h3>
-        <p style="color:#64748b; font-size:0.95rem; margin-bottom:16px;">
-            Enter the email you used when submitting your booking request.
-        </p>
-        <label for="lookupEmail">MSEUF Email Address</label>
-        <input type="email" id="lookupEmail" placeholder="you@mseuf.edu.ph" autocomplete="email">
-        <button class="btn-submit" id="lookupSubmitBtn" onclick="lookupMyBookings()">Search</button>
+        <h3 class="modal-title">Reservation Details</h3>
 
-        <div id="myBookingsResults" style="margin-top:20px;"></div>
+        <div id="eventDetailRows" style="margin: 20px 0;"></div>
 
-        <button class="btn-cancel" onclick="closeMyBookingsModal()">Close</button>
+        <div class="modal-actions">
+            <button id="evApproveBtn"  class="btn btn-approve"     style="display:none;" onclick="modalAdminAction('approve')">✔ Approve</button>
+            <button id="evRejectBtn"   class="btn btn-reject"      style="display:none;" onclick="modalAdminAction('reject')">✖ Reject</button>
+            <button id="evReschedBtn"  class="btn btn-resched"     style="display:none;" onclick="openReschedModal()">📅 Reschedule</button>
+            <button id="evCancelBtn"   class="btn btn-cancel-red"  style="display:none;" onclick="handleModalCancellation()">✕ Cancel Booking</button>
+            <button class="btn btn-secondary" onclick="closeModal('eventModal')">Close</button>
+        </div>
+    </div>
+</div>
+
+<!-- ── Reschedule Modal ───────────────────────────────────────── -->
+<div id="reschedModal" class="modal-overlay">
+    <div class="modal-box">
+        <h3 class="modal-title">Reschedule Booking</h3>
+        <p class="modal-subtitle" id="reschedBookingLabel"></p>
+
+        <label class="field-label" for="reschedDate">New Date</label>
+        <input type="date" id="reschedDate">
+
+        <label class="field-label" for="reschedTime" style="margin-top:16px;">Time Slot</label>
+        <select id="reschedTime">
+            <option value="AM">AM (8:00 AM – 12:00 PM)</option>
+            <option value="PM">PM (1:00 PM – 5:00 PM)</option>
+            <option value="WHOLE">Whole Day (8:00 AM – 5:00 PM)</option>
+        </select>
+
+        <label class="field-label" for="reschedReason" style="margin-top:16px;">Reason for Rescheduling</label>
+        <input type="text" id="reschedReason" placeholder="e.g. Venue conflict, requester unavailable…">
+
+        <div class="modal-actions">
+            <button class="btn btn-primary" id="reschedSubmitBtn" onclick="submitReschedule()">Confirm Reschedule</button>
+            <button class="btn btn-secondary" onclick="closeModal('reschedModal')">Cancel</button>
+        </div>
     </div>
 </div>
 
 <script>
-/* ─────────────────────────────────────────────
+/* ══════════════════════════════════════════════════════════════
    CONFIG
-───────────────────────────────────────────── */
-const API_URL = "https://script.google.com/macros/s/AKfycbwNLMmP8chjc5PnddhrY31fYfbCJvZcnUVl_8wlNPqjGlF_kBIoXst7GbA2CADVHjrk7A/exec";
+   ══════════════════════════════════════════════════════════════ */
+// IMPORTANT: Update ADMIN_KEY to match the value stored in
+// PropertiesService on the Apps Script side (no longer "ADMIN123").
+const API_URL   = "https://script.google.com/macros/s/AKfycbwNLMmP8chjc5PnddhrY31fYfbCJvZcnUVl_8wlNPqjGlF_kBIoXst7GbA2CADVHjrk7A/exec";
+const ADMIN_KEY = "CedieCodex"; // must match PropertiesService ADMIN_TOKEN
+
 const ALLOWED_EMAIL_DOMAIN = "@mseuf.edu.ph";
 
-const VENUE_COLORS = {
-    "University Gym":    "var(--gym)",
-    "BED Covered Court": "var(--court)",
-    "Student Lounge":    "var(--lounge)",
-    "Twin Court":        "var(--twin)"
+const VENUES = ["University Gym", "BED Covered Court", "Student Lounge", "Twin Court"];
+
+const VENUE_CHIP_CLASS = {
+    "University Gym":    "chip-UniversityGym",
+    "BED Covered Court": "chip-BEDCoveredCourt",
+    "Student Lounge":    "chip-StudentLounge",
+    "Twin Court":        "chip-TwinCourt"
 };
 
 const EQUIPMENT_LIMITS = {
@@ -742,338 +1002,362 @@ const EQUIPMENT_LIMITS = {
     "Long Table":            4
 };
 
-/* ─────────────────────────────────────────────
+// Column indices — must stay in sync with Code.gs COL constant.
+// Mirrors actual sheet: A=Timestamp, B=Name, C=Email, D=Venue, E=Subject,
+// F=Event Date, G=Start Time, H=End Time, I=TIME, J=Status,
+// K=NOTES (admin/resched notes), L=Booking ID, M=Feedback Status,
+// N=Tools and Equipment, O=REMARKS, P=Contact Number
+const COL = {
+    TIMESTAMP:      0,  // A
+    NAME:           1,  // B
+    EMAIL:          2,  // C
+    VENUE:          3,  // D
+    SUBJECT:        4,  // E
+    DATE:           5,  // F
+    START:          6,  // G
+    END:            7,  // H
+    TIME:           8,  // I
+    STATUS:         9,  // J
+    NOTES:         10,  // K — admin notes, rejection reasons, resched requests
+    BOOKING_ID:    11,  // L
+    FEEDBACK_SENT: 12,  // M — "SENT" flag for feedback emails
+    EQUIPMENT:     13,  // N
+    REMARKS:       14,  // O
+    PHONE:         15   // P — requester's contact number
+};
+
+/* ══════════════════════════════════════════════════════════════
    STATE
-───────────────────────────────────────────── */
-let events          = [];
-let eventsByDate    = {};
-let currentDate     = new Date();
-let selectedDate    = null;
-let currentEventInView = null;
-let ownershipVerified  = false;   // FIX #4
+   ══════════════════════════════════════════════════════════════ */
+let cachedEvents  = [];   // approved calendar events
+let adminBookings = [];   // full booking rows from sheet
+let displayDate   = new Date();
+let selectedDate  = "";
+let currentEvent  = null; // event currently shown in detail modal
+let reschedRow    = null; // row index being rescheduled
 
-/* ─────────────────────────────────────────────
+/* ══════════════════════════════════════════════════════════════
    UTILITIES
-───────────────────────────────────────────── */
+   ══════════════════════════════════════════════════════════════ */
 
-// FIX #14: XSS-safe HTML escaping
+// XSS-safe HTML escaping
 function esc(str) {
     const d = document.createElement("div");
     d.textContent = (str == null ? "" : String(str));
     return d.innerHTML;
 }
 
-// FIX #7: Parse date string as LOCAL time (avoids UTC-offset day shift in PH)
+// Parse date string as LOCAL time — avoids UTC midnight shift (PH = UTC+8)
 function parseLocalDate(dateStr) {
-    const [y, m, d] = dateStr.split("-").map(Number);
+    const [y, m, d] = String(dateStr).split("T")[0].split("-").map(Number);
     return new Date(y, m - 1, d);
 }
 
-function formatLocalDate(dateStr) {
-    return parseLocalDate(dateStr).toDateString();
+function toIsoDate(dateObj) {
+    return `${dateObj.getFullYear()}-${String(dateObj.getMonth()+1).padStart(2,"0")}-${String(dateObj.getDate()).padStart(2,"0")}`;
 }
 
-// Parse equipment field safely
 function parseEquipment(raw) {
     if (!raw) return {};
     if (typeof raw === "object") return raw;
     try { return JSON.parse(raw); } catch { return {}; }
 }
 
-/* ─────────────────────────────────────────────
-   INIT & DATA FETCH
-───────────────────────────────────────────── */
+/* ── Toast ──────────────────────────────────────────────────── */
+let toastTimer = null;
+function toast(msg, type = "success") {
+    const el = document.getElementById("toast");
+    el.textContent = msg;
+    el.className = `show ${type}`;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { el.className = ""; }, 3500);
+}
+
+/* ── Loader ─────────────────────────────────────────────────── */
+function setLoader(visible, msg = "Loading...") {
+    const el = document.getElementById("globalLoader");
+    document.getElementById("loaderMsg").textContent = msg;
+    el.classList.toggle("hidden", !visible);
+}
+
+/* ── Modal helpers ──────────────────────────────────────────── */
+function openModal(id)  { document.getElementById(id).classList.add("open"); }
+
+// Closes the given modal AND clears all of its fields/state so reopening
+// it (for a different booking, or the same one) never shows stale data
+// from the previous time it was open.
+function closeModal(id) {
+    document.getElementById(id).classList.remove("open");
+
+    if (id === "bookingModal")  resetBookingModal();
+    if (id === "eventModal")    resetEventModal();
+    if (id === "reschedModal")  resetReschedModal();
+}
+
+function resetBookingModal() {
+    document.getElementById("inp-name").value    = "";
+    document.getElementById("inp-subject").value = "";
+    document.getElementById("inp-email").value   = "";
+    document.getElementById("inp-phone").value   = "";
+    document.getElementById("inp-venue").innerHTML = "";
+    document.getElementById("inp-time").value = "AM";
+    document.getElementById("equipmentInputs").innerHTML = "";
+
+    const btn = document.getElementById("submitBookingBtn");
+    btn.disabled    = false;
+    btn.textContent = "Submit Booking";
+
+    selectedDate = "";
+}
+
+function resetEventModal() {
+    document.getElementById("eventDetailRows").innerHTML = "";
+
+    document.getElementById("evApproveBtn").style.display  = "none";
+    document.getElementById("evRejectBtn").style.display   = "none";
+    document.getElementById("evReschedBtn").style.display  = "none";
+    document.getElementById("evCancelBtn").style.display   = "none";
+
+    const cancelBtn = document.getElementById("evCancelBtn");
+    cancelBtn.disabled    = false;
+    cancelBtn.textContent = "✕ Cancel Booking";
+
+    currentEvent = null;
+}
+
+function resetReschedModal() {
+    document.getElementById("reschedBookingLabel").textContent = "";
+    document.getElementById("reschedDate").value   = "";
+    document.getElementById("reschedTime").value   = "AM";
+    document.getElementById("reschedReason").value = "";
+
+    const btn = document.getElementById("reschedSubmitBtn");
+    btn.disabled    = false;
+    btn.textContent = "Confirm Reschedule";
+
+    reschedRow = null;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   INIT & DATA
+   ══════════════════════════════════════════════════════════════ */
 async function init() {
-    showLoader(true);
+    setLoader(true, "Loading calendar...");
     try {
         const res  = await fetch(API_URL);
         const json = await res.json();
-        events = json.data.events || [];
-        buildEventsByDate();
+        cachedEvents = (json.data.events || []).map(ev => ({
+            ...ev,
+            equipment: parseEquipment(ev.equipment)
+        }));
         renderCalendar();
-        showLoader(false);
     } catch (e) {
-        console.error(e);
-        showLoaderError();  // FIX #12
+        console.error("Init error:", e);
+        toast("Failed to load calendar data. Check your connection.", "error");
+    } finally {
+        setLoader(false);
     }
 }
 
-function retryInit() {
-    document.getElementById("loaderError").style.display  = "none";
-    document.getElementById("loaderSpinner").style.display = "block";
-    document.getElementById("loaderText").style.display    = "block";
-    init();
+// Refresh calendar data in-place — no full reload
+async function refreshCalendar() {
+    try {
+        const res  = await fetch(API_URL);
+        const json = await res.json();
+        cachedEvents = (json.data.events || []).map(ev => ({
+            ...ev,
+            equipment: parseEquipment(ev.equipment)
+        }));
+        renderCalendar();
+    } catch (e) { console.warn("Calendar refresh failed:", e); }
 }
 
-function showLoader(visible) {
-    const el = document.getElementById("loader");
-    if (visible) {
-        el.classList.remove("hidden");
-    } else {
-        el.classList.add("hidden");
-    }
-}
-
-// FIX #12: Show error state inside loader instead of silent blank
-function showLoaderError() {
-    document.getElementById("loaderSpinner").style.display = "none";
-    document.getElementById("loaderText").style.display    = "none";
-    document.getElementById("loaderError").style.display   = "block";
-}
-
-function buildEventsByDate() {
-    eventsByDate = events.reduce((acc, ev) => {
-        const d = ev.start.split("T")[0];
-        acc[d] = acc[d] || [];
-        acc[d].push(ev);
-        return acc;
-    }, {});
-}
-
-/* ─────────────────────────────────────────────
+/* ══════════════════════════════════════════════════════════════
    CALENDAR RENDER
-───────────────────────────────────────────── */
+   ══════════════════════════════════════════════════════════════ */
 function renderCalendar() {
-    const cal = document.getElementById("calendar");
-    cal.innerHTML = "";
+    const grid  = document.getElementById("calendarGrid");
+    const year  = displayDate.getFullYear();
+    const month = displayDate.getMonth();
+    grid.innerHTML = "";
     document.getElementById("monthLabel").textContent =
-        currentDate.toLocaleString("default", { month: "long", year: "numeric" });
+        displayDate.toLocaleString("default", { month: "long", year: "numeric" });
 
-    // FIX #10: Always 7 columns; use short labels for mobile via textContent
+    // Day headers — always 7 columns, shrink on mobile via CSS
     ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].forEach(d => {
-        const div = document.createElement("div");
-        div.className = "day-header";
-        div.textContent = d;
-        cal.appendChild(div);
+        const el = document.createElement("div");
+        el.className = "day-name";
+        el.textContent = d;
+        grid.appendChild(el);
     });
 
-    const year     = currentDate.getFullYear();
-    const month    = currentDate.getMonth();
-    const firstDay = new Date(year, month, 1).getDay();
+    const firstDay  = new Date(year, month, 1).getDay();
     const totalDays = new Date(year, month + 1, 0).getDate();
+    const today     = new Date(); today.setHours(0,0,0,0);
 
-    const today = new Date(); today.setHours(0,0,0,0);
-    const leadLimit = new Date(today); leadLimit.setDate(today.getDate() + 10);
+    // Build a quick lookup: isoDate → events[]
+    const byDate = {};
+    cachedEvents.forEach(ev => {
+        const iso = ev.start.split("T")[0];
+        (byDate[iso] = byDate[iso] || []).push(ev);
+    });
 
-    // Empty cells before month starts
-    for (let i = 0; i < firstDay; i++) cal.appendChild(document.createElement("div"));
+    for (let i = 0; i < firstDay; i++) grid.appendChild(document.createElement("div"));
 
     for (let day = 1; day <= totalDays; day++) {
-        const iso = `${year}-${String(month + 1).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
-        const dayEvents = eventsByDate[iso] || [];
-        const dateObj   = parseLocalDate(iso);   // FIX #7
-        const isSunday  = dateObj.getDay() === 0;
-        const isTooSoon = dateObj < leadLimit;
+        const iso     = `${year}-${String(month+1).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
+        const dateObj = parseLocalDate(iso);
+        const isSun   = dateObj.getDay() === 0;
+        const dayEvts = byDate[iso] || [];
 
-        const dayDiv = document.createElement("div");
-        dayDiv.className = "day";
+        const cell = document.createElement("div");
+        cell.className = "cal-day" + (isSun ? " sunday" : "");
+        if (dateObj.getTime() === today.getTime()) cell.classList.add("today");
 
-        // Day number
-        const numEl = document.createElement("strong");
-        numEl.textContent = day;
-        dayDiv.appendChild(numEl);
+        const num = document.createElement("strong");
+        num.textContent = day;
+        cell.appendChild(num);
 
-        // Today highlight
-        if (dateObj.getTime() === today.getTime()) {
-            dayDiv.style.border = "2px solid var(--gold)";
-        }
-
-        if (isSunday || isTooSoon) {
-            dayDiv.classList.add("closed");
-            dayDiv.title = isSunday ? "Sundays are closed" : "Must book at least 10 days in advance";
-        } else {
-            // FIX #8: Show available label only on open, event-free days
-            if (dayEvents.length === 0) {
-                const avail = document.createElement("span");
-                avail.className = "day-available-label";
-                avail.textContent = "Available";
-                dayDiv.appendChild(avail);
-            }
-
-            // FIX #6: Guard — if all venues booked, show full indicator instead of broken modal
-            const bookedVenues = dayEvents.map(e => e.venue);
-            const allFull = Object.keys(VENUE_COLORS).every(v => bookedVenues.includes(v));
-
-            if (allFull) {
-                dayDiv.classList.add("closed");
-                dayDiv.title = "All venues fully booked on this day";
-            } else {
-                dayDiv.onclick = () => openModal(iso, bookedVenues);
-            }
-        }
-
-        // Event chips
-        dayEvents.forEach(ev => {
-            const evDiv = document.createElement("div");
-            evDiv.className = "event";
-            evDiv.textContent = (ev.title || "Reserved").substring(0, 20);  // FIX #13: textContent
-            evDiv.style.background = VENUE_COLORS[ev.venue] || "gray";
-            evDiv.onclick = e => { e.stopPropagation(); openEventDetails(ev); };
-            dayDiv.appendChild(evDiv);
+        dayEvts.forEach(ev => {
+            const chip = document.createElement("div");
+            chip.className = `event-chip ${VENUE_CHIP_CLASS[ev.venue] || ""}`;
+            chip.textContent = (ev.title || "Reserved").substring(0, 22);
+            chip.onclick = e => { e.stopPropagation(); openEventDetail(ev); };
+            cell.appendChild(chip);
         });
 
-        cal.appendChild(dayDiv);
+        if (!isSun) {
+            cell.onclick = () => openBookingModal(iso);
+        }
+
+        grid.appendChild(cell);
     }
 }
 
 function changeMonth(step) {
-    currentDate.setMonth(currentDate.getMonth() + step);
+    displayDate.setMonth(displayDate.getMonth() + step);
     renderCalendar();
 }
 
-/* ─────────────────────────────────────────────
+/* ══════════════════════════════════════════════════════════════
    BOOKING MODAL
-───────────────────────────────────────────── */
-function openModal(date, bookedVenues) {
+   ══════════════════════════════════════════════════════════════ */
+function openBookingModal(date) {
     selectedDate = date;
-    const availableVenues = Object.keys(VENUE_COLORS).filter(v => !bookedVenues.includes(v));
 
-    // FIX #6: Should never reach here if allFull, but guard defensively
-    if (availableVenues.length === 0) {
-        alert("All venues are fully booked on this day.");
+    // Only show venues not already fully booked on this date
+    const bookedVenues = (cachedEvents.filter(ev => ev.start.split("T")[0] === date)).map(ev => ev.venue);
+    const available    = VENUES.filter(v => !bookedVenues.includes(v));
+
+    if (available.length === 0) {
+        toast("All venues are fully booked on this day.", "info");
         return;
     }
 
-    // FIX #7: Use local date for display
-    document.getElementById("selectedDateLabel").textContent = "Request Date: " + formatLocalDate(date);
-    document.getElementById("venueSelect").innerHTML = availableVenues.map(v => `<option>${esc(v)}</option>`).join("");
+    document.getElementById("bookingDateLabel").textContent =
+        "Date: " + parseLocalDate(date).toDateString();
+    document.getElementById("inp-venue").innerHTML =
+        available.map(v => `<option value="${esc(v)}">${esc(v)}</option>`).join("");
+
+    // Reset form fields
+    ["inp-name","inp-subject","inp-email","inp-phone"].forEach(id => document.getElementById(id).value = "");
+    document.getElementById("inp-time").value = "AM";
+
     generateEquipmentInputs();
-    document.getElementById("modal").style.display = "flex";
-}
-
-function closeModal() {
-    document.getElementById("modal").style.display = "none";
-
-    // Clear all booking form fields so reopening never shows stale data
-    document.getElementById("name").value    = "";
-    document.getElementById("subject").value = "";
-    document.getElementById("email").value   = "";
-    document.getElementById("phone").value   = "";
-    document.getElementById("venueSelect").innerHTML = "";
-    document.getElementById("timeSelect").value = "AM";
-    document.getElementById("equipmentInputs").innerHTML = "";
-
-    // Reset submit button in case it was left mid-request
-    const submitBtn = document.getElementById("submitBookingBtn");
-    submitBtn.disabled    = false;
-    submitBtn.textContent = "Submit Request";
-
-    selectedDate = null;
+    openModal("bookingModal");
 }
 
 function generateEquipmentInputs() {
     const container = document.getElementById("equipmentInputs");
     container.innerHTML = "";
-    if (!selectedDate) return;
 
-    Object.keys(EQUIPMENT_LIMITS).forEach(eq => {
-        const used = (eventsByDate[selectedDate] || []).reduce((sum, ev) => {
-            const e = parseEquipment(ev.equipment);
-            return sum + (e[eq] || 0);
-        }, 0);
-        const available = Math.max(0, EQUIPMENT_LIMITS[eq] - used);
+    const dayEvts = cachedEvents.filter(ev => ev.start.split("T")[0] === selectedDate);
 
-        const label = document.createElement("label");
-        label.textContent = available > 0 ? `${eq} (Max: ${available})` : `${eq} (Fully Reserved)`;
+    Object.entries(EQUIPMENT_LIMITS).forEach(([eq, limit]) => {
+        const used      = dayEvts.reduce((s, ev) => s + (ev.equipment[eq] || 0), 0);
+        const available = Math.max(0, limit - used);
 
-        const input = document.createElement("input");
-        input.type  = "number";
-        input.id    = "eq_" + eq.replace(/\s/g, "_");
-        input.min   = 0;
-        input.max   = available;
-        input.value = 0;
-        if (available === 0) input.disabled = true;
+        const row = document.createElement("div");
+        row.className = "eq-row";
 
-        container.appendChild(label);
-        container.appendChild(input);
+        const lbl = document.createElement("label");
+        lbl.textContent = available > 0 ? `${eq} (Max: ${available})` : `${eq} (Fully Reserved)`;
+
+        const inp = document.createElement("input");
+        inp.type     = "number";
+        inp.id       = "eq_" + eq.replace(/\s/g, "_");
+        inp.min      = 0;
+        inp.max      = available;
+        inp.value    = 0;
+        inp.disabled = available === 0;
+
+        row.appendChild(lbl);
+        row.appendChild(inp);
+        container.appendChild(row);
     });
 }
 
-/* ─────────────────────────────────────────────
-   FORM VALIDATION
-───────────────────────────────────────────── */
-function validateForm() {
-    const name    = document.getElementById("name").value.trim();
-    const subject = document.getElementById("subject").value.trim();
-    const email   = document.getElementById("email").value.trim();
-    const phone   = document.getElementById("phone").value.trim();
+/* ── Booking validation ─────────────────────────────────────── */
+function validateBookingForm() {
+    const name    = document.getElementById("inp-name").value.trim();
+    const subject = document.getElementById("inp-subject").value.trim();
+    const email   = document.getElementById("inp-email").value.trim();
+    const phone   = document.getElementById("inp-phone").value.trim();
 
-    if (!name) {
-        alert("Please enter your full name.");
-        document.getElementById("name").focus();
-        return false;
-    }
-    if (!subject) {
-        alert("Please enter an event title.");
-        document.getElementById("subject").focus();
-        return false;
-    }
-    // FIX #9: Enforce institutional email domain
+    if (!name)    { toast("Please enter the requester's full name.", "error"); document.getElementById("inp-name").focus(); return false; }
+    if (!subject) { toast("Please enter an event title.", "error"); document.getElementById("inp-subject").focus(); return false; }
     if (!email.toLowerCase().endsWith(ALLOWED_EMAIL_DOMAIN)) {
-        alert(`Please use your MSEUF email address (e.g. you${ALLOWED_EMAIL_DOMAIN}).`);
-        document.getElementById("email").focus();
+        toast(`Please use an MSEUF email (e.g. you${ALLOWED_EMAIL_DOMAIN}).`, "error");
+        document.getElementById("inp-email").focus();
         return false;
     }
-    // Accepts PH mobile formats: 09XXXXXXXXX or +639XXXXXXXXX, spaces/dashes allowed
     const cleanedPhone = phone.replace(/[\s\-]/g, "");
     if (!/^(\+?63|0)9\d{9}$/.test(cleanedPhone)) {
-        alert("Please enter a valid contact number (e.g. 09171234567).");
-        document.getElementById("phone").focus();
+        toast("Please enter a valid contact number (e.g. 09171234567).", "error");
+        document.getElementById("inp-phone").focus();
         return false;
     }
     return true;
 }
 
 function validateEquipment(requested) {
-    const dayEvents = eventsByDate[selectedDate] || [];
+    const dayEvts   = cachedEvents.filter(ev => ev.start.split("T")[0] === selectedDate);
     const totalUsed = {};
-    dayEvents.forEach(ev => {
-        const e = parseEquipment(ev.equipment);
+    dayEvts.forEach(ev => {
         Object.keys(EQUIPMENT_LIMITS).forEach(eq => {
-            totalUsed[eq] = (totalUsed[eq] || 0) + (e[eq] || 0);
+            totalUsed[eq] = (totalUsed[eq] || 0) + (ev.equipment[eq] || 0);
         });
     });
     for (const eq in requested) {
         const available = EQUIPMENT_LIMITS[eq] - (totalUsed[eq] || 0);
         if (requested[eq] > available) {
-            alert(`Not enough ${eq}. Only ${available} available.`);
+            toast(`Not enough ${eq}. Only ${available} available.`, "error");
             return false;
         }
     }
     return true;
 }
 
-/* ─────────────────────────────────────────────
-   SUBMIT BOOKING — FIX #1: single, merged function
-───────────────────────────────────────────── */
 async function submitBooking() {
-    // FIX #1: validateForm() is now the single validation entry point
-    if (!validateForm()) return;
-
-    const btn     = document.getElementById("submitBookingBtn");
-    const name    = document.getElementById("name").value.trim();
-    const subject = document.getElementById("subject").value.trim();
-    const email   = document.getElementById("email").value.trim();
-    const phone   = document.getElementById("phone").value.trim();
+    if (!validateBookingForm()) return;
 
     const equipmentData = {};
     Object.keys(EQUIPMENT_LIMITS).forEach(eq => {
-        equipmentData[eq] = Number(document.getElementById("eq_" + eq.replace(/\s/g,"_")).value);
+        equipmentData[eq] = Number(document.getElementById("eq_" + eq.replace(/\s/g,"_")).value || 0);
     });
-
     if (!validateEquipment(equipmentData)) return;
 
-    btn.disabled  = true;
+    const btn = document.getElementById("submitBookingBtn");
+    btn.disabled = true;
     btn.textContent = "Submitting…";
 
     const payload = {
-        action:    "newBooking",
-        name,
-        subject,
-        email,
-        phone,
-        venue:     document.getElementById("venueSelect").value,
-        time:      document.getElementById("timeSelect").value,
+        name:      document.getElementById("inp-name").value.trim(),
+        subject:   document.getElementById("inp-subject").value.trim(),
+        email:     document.getElementById("inp-email").value.trim(),
+        phone:     document.getElementById("inp-phone").value.trim(),
+        venue:     document.getElementById("inp-venue").value,
+        time:      document.getElementById("inp-time").value,
         date:      selectedDate,
         equipment: equipmentData
     };
@@ -1081,417 +1365,684 @@ async function submitBooking() {
     try {
         const res  = await fetch(API_URL, { method: "POST", body: JSON.stringify(payload) });
         const json = await res.json();
-        alert(json.data || "Request submitted!");
-        // FIX #15: Update local state instead of full page reload
-        closeModal();
-        await refreshData();
-    } catch (e) {
-        alert("Submission failed. Please check your connection.");
-    } finally {
-        btn.disabled = false;
-        btn.textContent = "Submit Request";
-    }
-}
-
-/* ─────────────────────────────────────────────
-   REFRESH WITHOUT FULL RELOAD — FIX #15
-───────────────────────────────────────────── */
-async function refreshData() {
-    try {
-        const res  = await fetch(API_URL);
-        const json = await res.json();
-        events = json.data.events || [];
-        buildEventsByDate();
-        renderCalendar();
-    } catch (e) {
-        console.warn("Refresh failed, data may be stale:", e);
-    }
-}
-
-/* ─────────────────────────────────────────────
-   EVENT DETAILS MODAL
-───────────────────────────────────────────── */
-function openEventDetails(ev) {
-    currentEventInView = ev;
-    ownershipVerified  = false;   // FIX #4: reset on each open
-
-    // Reset auth gate state — both fields cleared; requester must supply
-    // their own email AND the Booking ID from their confirmation email
-    document.getElementById("authEmail").value     = "";
-    document.getElementById("authBookingId").value = "";
-    document.getElementById("authError").style.display = "none";
-    document.getElementById("authGate").style.display   = "block";
-
-    // Reset verify button in case it was left mid-request from a prior open
-    const verifyBtn = document.getElementById("verifyBtn");
-    verifyBtn.disabled    = false;
-    verifyBtn.textContent = "Verify";
-
-    // Hide action buttons until verified
-    document.getElementById("cancelBtn").style.display      = "none";
-    document.getElementById("rescheduleBtn").style.display  = "none";
-
-    // Reset reason forms in case they were left open from a prior event
-    document.getElementById("cancelForm").style.display     = "none";
-    document.getElementById("rescheduleForm").style.display = "none";
-    document.getElementById("cancelReason").value  = "";
-    document.getElementById("reschedReason").value = "";
-
-    const eq    = parseEquipment(ev.equipment);
-    const items = Object.entries(eq).filter(([,qty]) => qty > 0).map(([name,qty]) => `• ${esc(name)}: ${qty}`);
-
-    // FIX #14: Use esc() on every user-supplied field to prevent XSS
-    // Booking ID is intentionally NOT shown here — it's only ever delivered
-    // privately via the confirmation email, and is required (along with
-    // email) to verify ownership below.
-    document.getElementById("detailContent").innerHTML = `
-        <p><strong>Event:</strong> ${esc(ev.title) || "N/A"}</p>
-        <p><strong>Requester:</strong> ${esc(ev.requester) || "N/A"}</p>
-        <p><strong>Venue:</strong> ${esc(ev.venue) || "N/A"}</p>
-        <p><strong>Time:</strong> ${esc(ev.time) || "Not specified"}</p>
-        <p><strong>Date:</strong> ${esc(new Date(ev.start).toDateString())}</p>
-        <p><strong>Equipment:</strong><br>${items.length ? items.join("<br>") : "None"}</p>
-    `;
-
-    document.getElementById("detailContent").style.display = "block";
-    document.getElementById("rescheduleForm").style.display = "none";
-    document.getElementById("eventDetailsModal").style.display = "flex";
-}
-
-// Server-side ownership verification — calls Code.gs handleVerifyOwnership.
-// The requester must provide BOTH their email and the Booking ID that was
-// sent to them privately via the confirmation email — neither is ever
-// shown on the public calendar. We also confirm the typed Booking ID
-// matches the specific event they clicked on, so a valid ID/email pair
-// for a DIFFERENT booking can't be used to unlock actions on this one.
-async function verifyOwnership() {
-    const inputEmail = document.getElementById("authEmail").value.trim();
-    const inputId    = document.getElementById("authBookingId").value.trim().toUpperCase();
-    const btn        = document.getElementById("verifyBtn");
-    const errorEl    = document.getElementById("authError");
-
-    errorEl.style.display = "none";
-
-    if (!inputId) {
-        errorEl.textContent = "Please enter the Booking ID from your confirmation email.";
-        errorEl.style.display = "block";
-        return;
-    }
-    if (!inputEmail.toLowerCase().endsWith(ALLOWED_EMAIL_DOMAIN)) {
-        errorEl.textContent = `Please use your MSEUF email (e.g. you${ALLOWED_EMAIL_DOMAIN}).`;
-        errorEl.style.display = "block";
-        return;
-    }
-
-    // The typed ID must match THIS event's booking — prevents reusing a
-    // different, otherwise-valid booking's credentials on this event.
-    const thisEventId = (currentEventInView?.bookingId || "").toUpperCase();
-    if (inputId !== thisEventId) {
-        errorEl.textContent = "Email or Booking ID does not match our records for this booking.";
-        errorEl.style.display = "block";
-        return;
-    }
-
-    btn.disabled    = true;
-    btn.textContent = "Verifying…";
-
-    try {
-        const res  = await fetch(API_URL, {
-            method: "POST",
-            body: JSON.stringify({
-                action:    "verify_ownership",
-                bookingId: inputId,
-                email:     inputEmail
-            })
-        });
-        const json = await res.json();
-
-        if (json.status === "success" && json.data === true) {
-            ownershipVerified = true;
-            document.getElementById("authGate").style.display      = "none";
-            document.getElementById("cancelBtn").style.display      = "block";
-            document.getElementById("rescheduleBtn").style.display  = "block";
+        if (json.status === "success") {
+            toast("Booking submitted successfully!");
+            closeModal("bookingModal");
+            await refreshCalendar();
         } else {
-            errorEl.textContent = "Email or Booking ID does not match our records.";
-            errorEl.style.display = "block";
+            toast(json.data || "Submission failed.", "error");
         }
     } catch (e) {
-        errorEl.textContent = "Verification failed. Please check your connection and try again.";
-        errorEl.style.display = "block";
+        toast("Submission failed. Check your connection.", "error");
     } finally {
         btn.disabled    = false;
-        btn.textContent = "Verify";
+        btn.textContent = "Submit Booking";
     }
 }
 
-function closeDetails() {
-    document.getElementById("eventDetailsModal").style.display = "none";
-    document.getElementById("detailContent").style.display     = "block";
-    document.getElementById("cancelForm").style.display        = "none";
-    document.getElementById("rescheduleForm").style.display    = "none";
-    document.getElementById("cancelReason").value  = "";
-    document.getElementById("reschedReason").value = "";
-    document.getElementById("reschedDate").value   = "";
-    document.getElementById("reschedTime").value   = "AM";
+/* ══════════════════════════════════════════════════════════════
+   EVENT DETAIL MODAL  (from calendar chips)
+   ══════════════════════════════════════════════════════════════ */
+function openEventDetail(ev) {
+    currentEvent = ev;
 
-    // Clear the auth gate so a closed/reopened modal never shows a
-    // previous person's email/Booking ID or a stale verification error
-    document.getElementById("authEmail").value         = "";
-    document.getElementById("authBookingId").value     = "";
-    document.getElementById("authError").style.display = "none";
-    document.getElementById("authGate").style.display  = "block";
+    const eq    = ev.equipment || {};
+    const eqStr = Object.entries(eq).filter(([,q]) => q > 0).map(([n,q]) => `• ${esc(n)}: ${q}`).join("<br>") || "None";
 
-    // FIX #11: Reset button states on close
-    const cancelBtn = document.getElementById("cancelBtn");
+    // Phone isn't in the public calendar feed (privacy) — look it up from the
+    // admin-only sheet data we already have cached, if the Reservations page
+    // has been loaded at least once this session.
+    const matchedBooking = adminBookings.find(b => b.data[COL.BOOKING_ID] === ev.bookingId);
+    const phone = matchedBooking ? (matchedBooking.data[COL.PHONE] || "") : "";
+    const phoneHtml = phone
+        ? `<a href="tel:${esc(phone)}" style="color:var(--maroon); font-weight:700;">${esc(phone)}</a>`
+        : `<span style="color:var(--text-secondary);">Not available — open Reservations to load contact info</span>`;
+
+    // Submission timestamp, same source as the Reservations table
+    const rawTimestamp = matchedBooking ? matchedBooking.data[COL.TIMESTAMP] : null;
+    const filedAtHtml = rawTimestamp
+        ? esc(new Date(rawTimestamp).toLocaleString("en-PH", {
+              month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit"
+          }))
+        : `<span style="color:var(--text-secondary);">Not available — open Reservations to load this info</span>`;
+
+    // Build detail rows using esc() on all dynamic values (XSS safe)
+    document.getElementById("eventDetailRows").innerHTML = `
+        <div class="detail-row"><span class="detail-key">Booking ID</span><span class="detail-val">${esc(ev.bookingId) || "N/A"}</span></div>
+        <div class="detail-row"><span class="detail-key">Event</span><span class="detail-val">${esc(ev.title) || "N/A"}</span></div>
+        <div class="detail-row"><span class="detail-key">Requester</span><span class="detail-val">${esc(ev.requester) || "N/A"}</span></div>
+        <div class="detail-row"><span class="detail-key">Contact No.</span><span class="detail-val">${phoneHtml}</span></div>
+        <div class="detail-row"><span class="detail-key">Venue</span><span class="detail-val">${esc(ev.venue) || "N/A"}</span></div>
+        <div class="detail-row"><span class="detail-key">Date</span><span class="detail-val">${esc(new Date(ev.start).toDateString())}</span></div>
+        <div class="detail-row"><span class="detail-key">Time</span><span class="detail-val">${esc(ev.time) || "N/A"}</span></div>
+        <div class="detail-row"><span class="detail-key">Filed On</span><span class="detail-val">${filedAtHtml}</span></div>
+        <div class="detail-row"><span class="detail-key">Equipment</span><span class="detail-val"><div class="eq-list">${eqStr}</div></span></div>
+    `;
+
+    // Admin can cancel or reschedule approved events from the calendar view
+    document.getElementById("evApproveBtn").style.display  = "none";
+    document.getElementById("evRejectBtn").style.display   = "none";
+    document.getElementById("evReschedBtn").style.display  = "block";
+    document.getElementById("evCancelBtn").style.display   = "block";
+
+    // Reset button states
+    const cancelBtn = document.getElementById("evCancelBtn");
     cancelBtn.disabled    = false;
-    cancelBtn.textContent = "Cancel Booking";
+    cancelBtn.textContent = "✕ Cancel Booking";
 
-    const cancelSubmitBtn = document.getElementById("cancelSubmitBtn");
-    cancelSubmitBtn.disabled    = false;
-    cancelSubmitBtn.textContent = "Confirm Cancellation";
-
-    const reschedSubmitBtn = document.getElementById("reschedSubmitBtn");
-    reschedSubmitBtn.disabled    = false;
-    reschedSubmitBtn.textContent = "Send Request";
-
-    const verifyBtn = document.getElementById("verifyBtn");
-    verifyBtn.disabled    = false;
-    verifyBtn.textContent = "Verify";
-
-    document.getElementById("cancelBtn").style.display      = "none";
-    document.getElementById("rescheduleBtn").style.display  = "none";
-
-    ownershipVerified   = false;
-    currentEventInView  = null;
+    openModal("eventModal");
 }
 
-// Show the cancellation reason form instead of an immediate browser confirm()
-function showCancelForm() {
-    if (!ownershipVerified) { alert("Please verify your identity first."); return; }
-    document.getElementById("detailContent").style.display = "none";
-    document.getElementById("cancelBtn").style.display      = "none";
-    document.getElementById("rescheduleBtn").style.display  = "none";
-    document.getElementById("cancelForm").style.display     = "block";
-}
-
-async function handleModalCancellation(btn) {
-    if (!currentEventInView?.bookingId) {
-        alert("Cannot cancel: no Booking ID found for this event.");
-        return;
-    }
-    if (!ownershipVerified) {
-        alert("Please verify your identity first.");
+async function handleModalCancellation() {
+    if (!currentEvent?.bookingId) {
+        toast("No Booking ID found for this event.", "error");
         return;
     }
 
-    const reason = document.getElementById("cancelReason").value.trim();
-    if (!reason) {
-        alert("Please briefly tell us why you're cancelling — this helps the Property Department.");
-        document.getElementById("cancelReason").focus();
+    const reason = prompt("Reason for cancelling this booking (required):");
+    if (reason === null) return; // user dismissed the prompt
+    if (!reason.trim()) {
+        toast("A cancellation reason is required.", "error");
         return;
     }
+    if (!confirm(`Cancel "${currentEvent.title}"?\n\nReason: ${reason}\n\nThis will remove it from the Google Calendar.`)) return;
 
-    const confirmed = confirm(
-        `Cancel "${currentEventInView.title}"?\n\nReason: ${reason}\n\nThis will remove it from the Google Calendar and the schedule.`
-    );
-    if (!confirmed) return;
-
+    const btn = document.getElementById("evCancelBtn");
     btn.disabled    = true;
     btn.textContent = "Processing…";
 
     try {
         const res  = await fetch(API_URL, {
             method: "POST",
-            body: JSON.stringify({
-                action:    "cancel_admin_by_id",
-                bookingId: currentEventInView.bookingId,
-                reason
-            })
+            body: JSON.stringify({ action: "cancel_admin_by_id", bookingId: currentEvent.bookingId, reason: reason.trim() })
         });
         const json = await res.json();
-        alert(json.data);
-        closeDetails();
-        // FIX #15: Refresh local data instead of full reload
-        await refreshData();
+        if (json.status === "success") {
+            toast("Booking cancelled successfully.");
+            closeModal("eventModal");
+            await refreshCalendar();
+            // Also refresh admin table if it's loaded
+            if (adminBookings.length) loadAdmin();
+        } else {
+            toast(json.data || "Cancellation failed.", "error");
+        }
     } catch (e) {
-        alert("Cancellation failed. Please check your connection.");
+        toast("Cancellation failed. Check your connection.", "error");
     } finally {
         btn.disabled    = false;
-        btn.textContent = "Confirm Cancellation";
+        btn.textContent = "✕ Cancel Booking";
     }
 }
 
-function showRescheduleForm() {
-    if (!ownershipVerified) { alert("Please verify your identity first."); return; }
-    document.getElementById("detailContent").style.display   = "none";
-    document.getElementById("cancelBtn").style.display       = "none";
-    document.getElementById("rescheduleBtn").style.display   = "none";
-    document.getElementById("rescheduleForm").style.display  = "block";
+/* ══════════════════════════════════════════════════════════════
+   ADMIN / RESERVATIONS PAGE
+   ══════════════════════════════════════════════════════════════ */
+async function loadAdmin() {
+    const tbody = document.getElementById("adminTable");
+    tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--text-secondary); padding:32px;">Loading reservations…</td></tr>`;
+
+    try {
+        const res  = await fetch(`${API_URL}?action=admin_data&key=${encodeURIComponent(ADMIN_KEY)}`);
+        const json = await res.json();
+
+        if (json.status !== "success") {
+            console.warn("Admin API non-success:", json);
+            tbody.innerHTML = `<tr><td colspan="5" style="color:#dc2626; padding:24px; line-height:1.8;">
+                <strong>Could not load data.</strong><br>
+                <small>Status: <code>${esc(String(json.status ?? 'unknown'))}</code>
+                &nbsp;&middot;&nbsp; Message: <code>${esc(String(json.data ?? 'none'))}</code></small><br>
+                <small style="color:#64748b;">Ensure <code>ADMIN_KEY</code> in admin.html matches
+                <code>ADMIN_TOKEN</code> in PropertiesService on the Apps Script side.</small>
+            </td></tr>`;
+            return;
+        }
+
+        // Log the raw shape — useful when diagnosing key/structure mismatches
+        console.log("Admin API payload:", JSON.stringify(json.data, null, 2));
+
+        const payload = json.data ?? {};
+
+        // Sentinel: if the response has "events" but no "bookings", the Apps Script
+        // returned public calendar data — almost always means the ADMIN_KEY is wrong
+        // or the deployment hasn't been updated yet.
+        if (payload.events !== undefined && payload.bookings === undefined) {
+            tbody.innerHTML = `<tr><td colspan="5" style="color:#92400e; background:#fef3c7; padding:20px 24px; line-height:1.9;">
+                <strong>⚠️ Received public calendar data instead of admin data.</strong><br>
+                This means the <code>ADMIN_KEY</code> in admin.html does not match the
+                <code>ADMIN_TOKEN</code> stored in PropertiesService on the Apps Script side,
+                <strong>or the Apps Script has not been redeployed</strong> since Code.gs was last edited.<br><br>
+                <b>Steps to fix:</b><br>
+                1. Open Code.gs in the Apps Script editor and run <code>setupProperties()</code> once
+                   (make sure <code>ADMIN_TOKEN</code> is set to a real secret).<br>
+                2. Update <code>const ADMIN_KEY</code> at the top of admin.html to that same secret.<br>
+                3. In Apps Script → Deploy → Manage deployments → create a <b>new version</b> and copy the new URL.<br>
+                4. Update <code>const API_URL</code> in both admin.html and venue-availability.html if the URL changed.
+            </td></tr>`;
+            document.getElementById("statsSection").innerHTML = "";
+            return;
+        }
+
+        // Defensive extraction — guard against undefined analytics or bookings
+        const bookings  = Array.isArray(payload.bookings) ? payload.bookings : [];
+        const rawStats  = (payload.analytics && typeof payload.analytics === "object")
+                            ? payload.analytics : {};
+
+        // Detect a stale deployment: quarterly fields are present (old Code.gs
+        // shape) but the all-time fields are missing (added later). If only
+        // this happens, the Apps Script needs to be redeployed — show a clear
+        // banner instead of silently rendering dashes for All Time.
+        const hasQuarterly = rawStats.activeQuarter !== undefined;
+        const hasAllTime   = rawStats.allTimeTotal !== undefined;
+        const staleDeployment = hasQuarterly && !hasAllTime;
+
+        if (staleDeployment) {
+            console.warn("Stats payload is missing all-time fields — Code.gs likely needs redeploying.", rawStats);
+        }
+
+        // Fill missing fields with safe defaults so the UI never crashes
+        const stats = {
+            activeQuarter:    rawStats.activeQuarter    ?? "—",
+            totalApproved:    rawStats.totalApproved    ?? 0,
+            totalPending:     rawStats.totalPending     ?? 0,
+            totalRejected:    rawStats.totalRejected    ?? 0,
+            totalCancelled:   rawStats.totalCancelled   ?? 0,
+            allTimeApproved:  rawStats.allTimeApproved  ?? "—",
+            allTimePending:   rawStats.allTimePending   ?? "—",
+            allTimeRejected:  rawStats.allTimeRejected  ?? "—",
+            allTimeCancelled: rawStats.allTimeCancelled ?? "—",
+            allTimeTotal:     rawStats.allTimeTotal     ?? "—"
+        };
+
+        adminBookings = bookings;
+
+        // ── Stale-deployment banner ───────────────────────────
+        const staleBannerHtml = staleDeployment ? `
+            <div style="background:#fef3c7; border:1px solid #fbbf24; border-radius:10px;
+                        padding:12px 16px; margin-bottom:16px; font-size:0.82rem; color:#92400e; line-height:1.7;">
+                <strong>⚠️ "All Time" stats unavailable.</strong>
+                The connected Apps Script is returning an older response shape (no all-time stats yet).
+                In Apps Script, go to <b>Deploy → Manage deployments</b>, select the active deployment,
+                and create a <b>New version</b> to push the latest Code.gs changes live.
+            </div>` : "";
+
+        // ── Stats section ────────────────────────────────────
+        document.getElementById("statsSection").innerHTML = `
+            ${staleBannerHtml}
+            <div class="card" style="margin-bottom:20px;">
+                <h2 class="card-title" style="font-size:1.1rem; margin-bottom:4px;">
+                    Dashboard Overview
+                </h2>
+                <div class="stat-quarter">
+                    Quarterly tracking: <strong>${esc(stats.activeQuarter)}</strong>
+                    &nbsp;·&nbsp; All-time total: <strong>${stats.allTimeTotal} bookings</strong>
+                </div>
+                <div style="margin-bottom:10px; font-size:0.75rem; font-weight:700;
+                            text-transform:uppercase; letter-spacing:0.06em; color:var(--text-secondary);">
+                    This Quarter
+                </div>
+                <div class="stats-grid" style="margin-bottom:24px;">
+                    <div class="stat-card">
+                        <div class="stat-value" style="color:#16a34a;">${stats.totalApproved}</div>
+                        <div class="stat-label">Approved</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" style="color:#d97706;">${stats.totalPending}</div>
+                        <div class="stat-label">Pending</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" style="color:#dc2626;">${stats.totalRejected}</div>
+                        <div class="stat-label">Rejected</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" style="color:#64748b;">${stats.totalCancelled}</div>
+                        <div class="stat-label">Cancelled</div>
+                    </div>
+                </div>
+                <div style="margin-bottom:10px; font-size:0.75rem; font-weight:700;
+                            text-transform:uppercase; letter-spacing:0.06em; color:var(--text-secondary);">
+                    All Time
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" style="color:#16a34a; font-size:1.75rem;">${stats.allTimeApproved}</div>
+                        <div class="stat-label">Approved</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" style="color:#d97706; font-size:1.75rem;">${stats.allTimePending}</div>
+                        <div class="stat-label">Pending</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" style="color:#dc2626; font-size:1.75rem;">${stats.allTimeRejected}</div>
+                        <div class="stat-label">Rejected</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" style="color:#64748b; font-size:1.75rem;">${stats.allTimeCancelled}</div>
+                        <div class="stat-label">Cancelled</div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        renderReservationsTable();
+
+    } catch (e) {
+        console.error("loadAdmin error:", e);
+        document.getElementById("adminTable").innerHTML =
+            `<tr><td colspan="5" style="color:#dc2626; padding:24px;">Error loading data. Check console.</td></tr>`;
+    }
 }
 
-// FIX #3: Receive button as explicit parameter instead of relying on global `event`
-async function submitRescheduleRequest(btn) {
+/* ── Sort/filter state ───────────────────────────────────────── */
+let sortColumn = "date";
+let sortDir    = "desc"; // "asc" | "desc" — default newest first
+
+function setSort(column) {
+    if (sortColumn === column) {
+        sortDir = sortDir === "asc" ? "desc" : "asc";
+    } else {
+        sortColumn = column;
+        sortDir    = "asc";
+    }
+    renderReservationsTable();
+}
+
+function applyTableFilters() {
+    renderReservationsTable();
+}
+
+// Extracts a sortable/filterable value from a raw booking row
+function getSortValue(d, column) {
+    switch (column) {
+        case "date":    return parseLocalDate(d[COL.DATE]).getTime();
+        case "subject": return (d[COL.SUBJECT] || "").toLowerCase();
+        case "venue":   return (d[COL.VENUE]   || "").toLowerCase();
+        case "status":  return (d[COL.STATUS]  || "").toLowerCase();
+        default:        return "";
+    }
+}
+
+// Filters and sorts adminBookings, then renders the table.
+// Called on initial load, and again whenever search/filter/sort changes —
+// all client-side, no extra API calls needed.
+function renderReservationsTable() {
+    const tbody = document.getElementById("adminTable");
+
+    const searchTerm   = (document.getElementById("tableSearch")?.value || "").trim().toLowerCase();
+    const statusFilter = document.getElementById("statusFilter")?.value || "";
+
+    let rows = adminBookings.filter(b => {
+        const d = b.data;
+        if (statusFilter && d[COL.STATUS] !== statusFilter) return false;
+        if (searchTerm) {
+            const haystack = [d[COL.SUBJECT], d[COL.NAME], d[COL.VENUE], d[COL.PHONE]]
+                .join(" ").toLowerCase();
+            if (!haystack.includes(searchTerm)) return false;
+        }
+        return true;
+    });
+
+    // Sort
+    rows = rows.slice().sort((a, b) => {
+        const va = getSortValue(a.data, sortColumn);
+        const vb = getSortValue(b.data, sortColumn);
+        if (va < vb) return sortDir === "asc" ? -1 : 1;
+        if (va > vb) return sortDir === "asc" ?  1 : -1;
+        return 0;
+    });
+
+    // Update sort arrow indicators on column headers
+    ["date","subject","venue","status"].forEach(col => {
+        const el = document.getElementById(`sortArrow-${col}`);
+        if (!el) return;
+        if (col === sortColumn) {
+            el.textContent = sortDir === "asc" ? "▲" : "▼";
+            el.classList.add("active");
+        } else {
+            el.textContent = "";
+            el.classList.remove("active");
+        }
+    });
+
+    if (!rows.length) {
+        const msg = adminBookings.length
+            ? "No reservations match your search/filter."
+            : "No bookings found.";
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--text-secondary); padding:32px;">${esc(msg)}</td></tr>`;
+        return;
+    }
+
+    tbody.innerHTML = rows.map(b => {
+        const d       = b.data;                          // raw row array
+        const status  = d[COL.STATUS];
+        const notes   = d[COL.NOTES] || "";
+        const rowIdx  = b.row;
+
+        // Row decoration
+        let rowClass = "";
+        if (status === "RESCHED_PENDING") rowClass = 'style="background:#fffbeb; border-left:4px solid #f59e0b;"';
+        if (status === "CANCELLED")       rowClass = 'style="opacity:0.55;"';
+
+        // Show the reason/note for any status that has one — not just RESCHED_PENDING.
+        // Colour and icon adapt to the status so it reads naturally in context.
+        let noteHtml = "";
+        if (notes) {
+            if (status === "RESCHED_PENDING") {
+                noteHtml = `<div class="resched-note">⚠️ ${esc(notes)}</div>`;
+            } else if (status === "CANCELLED") {
+                noteHtml = `<div class="resched-note" style="color:#dc2626;">🗑️ ${esc(notes)}</div>`;
+            } else if (status === "REJECTED") {
+                noteHtml = `<div class="resched-note" style="color:#991b1b;">✖ Reason: ${esc(notes)}</div>`;
+            } else if (status === "APPROVED" && notes.startsWith("RESCHEDULED:")) {
+                noteHtml = `<div class="resched-note" style="color:#0369a1;">📅 ${esc(notes)}</div>`;
+            }
+        }
+
+        // Action buttons — match what the backend expects
+        let actions = `<small style="color:var(--text-secondary);">—</small>`;
+
+        if (status === "PENDING" || status === "RESCHED_PENDING") {
+            actions = `
+                <div class="action-group">
+                    <button class="btn btn-icon btn-approve"  onclick="adminAction(${rowIdx},'approve')"  title="Approve">✔ Approve</button>
+                    <button class="btn btn-icon btn-reject"   onclick="adminAction(${rowIdx},'reject')"   title="Reject">✖ Reject</button>
+                    <button class="btn btn-icon btn-resched"  onclick="openAdminReschedModal(${rowIdx}, '${esc(d[COL.SUBJECT])}')" title="Reschedule">📅 Resched</button>
+                </div>`;
+        } else if (status === "APPROVED") {
+            actions = `
+                <div class="action-group">
+                    <button class="btn btn-icon btn-resched"    onclick="openAdminReschedModal(${rowIdx}, '${esc(d[COL.SUBJECT])}')" title="Reschedule">📅 Resched</button>
+                    <button class="btn btn-icon btn-cancel-red" onclick="adminCancel(${rowIdx})" title="Cancel">✕ Cancel</button>
+                </div>`;
+        }
+
+        // Parse event date safely using local-date helper
+        const eventDate = parseLocalDate(d[COL.DATE]).toLocaleDateString();
+
+        // Submission timestamp — when this request was actually filed.
+        // Shown as a small subtext under the event date so admins can see,
+        // at a glance, who filed first without leaving the table.
+        const rawTimestamp = d[COL.TIMESTAMP];
+        const filedAt = rawTimestamp
+            ? new Date(rawTimestamp).toLocaleString("en-PH", {
+                  month: "short", day: "numeric", year: "numeric",
+                  hour: "numeric", minute: "2-digit"
+              })
+            : "";
+
+        // Filing-order badge — only rendered when there's real contention
+        // (2+ active requests for the same date + venue). b.filingOrder is
+        // computed server-side in getAdminData().
+        let filingBadge = "";
+        if (b.filingOrder) {
+            const ordinalMap = { 1: "1st", 2: "2nd", 3: "3rd" };
+            const label = ordinalMap[b.filingOrder] || `${b.filingOrder}th`;
+            const isFirst = b.filingOrder === 1;
+            filingBadge = `<div style="margin-top:4px; font-size:0.7rem; font-weight:700;
+                color:${isFirst ? "#166534" : "#92400e"};">
+                ${isFirst ? "🥇" : "⏱"} Filed ${label} for this date/venue
+            </div>`;
+        }
+
+        // Show contact number as a tappable tel: link if present
+        const phone = d[COL.PHONE] || "";
+        const phoneHtml = phone
+            ? ` &middot; <a href="tel:${esc(phone)}" style="color:var(--maroon);">${esc(phone)}</a>`
+            : "";
+
+        return `
+            <tr ${rowClass}>
+                <td>
+                    ${esc(eventDate)}
+                    ${filedAt ? `<div style="font-size:0.7rem; color:var(--text-secondary); margin-top:2px;">Filed: ${esc(filedAt)}</div>` : ""}
+                    ${filingBadge}
+                </td>
+                <td>
+                    <strong>${esc(d[COL.SUBJECT])}</strong><br>
+                    <small style="color:var(--text-secondary);">${esc(d[COL.NAME])}${phoneHtml}</small>
+                    ${noteHtml}
+                </td>
+                <td>${esc(d[COL.VENUE])}</td>
+                <td><span class="status-pill status-${esc(status)}">${esc(status.replace("_"," "))}</span></td>
+                <td>${actions}</td>
+            </tr>`;
+    }).join("");
+}
+
+/* ── CSV export ──────────────────────────────────────────────── */
+// Exports the CURRENTLY FILTERED/SORTED view, not the full unfiltered set —
+// so admins can filter to e.g. "this venue, approved only" then export just that.
+function exportReservationsCsv() {
+    const searchTerm   = (document.getElementById("tableSearch")?.value || "").trim().toLowerCase();
+    const statusFilter = document.getElementById("statusFilter")?.value || "";
+
+    let rows = adminBookings.filter(b => {
+        const d = b.data;
+        if (statusFilter && d[COL.STATUS] !== statusFilter) return false;
+        if (searchTerm) {
+            const haystack = [d[COL.SUBJECT], d[COL.NAME], d[COL.VENUE], d[COL.PHONE]].join(" ").toLowerCase();
+            if (!haystack.includes(searchTerm)) return false;
+        }
+        return true;
+    });
+
+    rows = rows.slice().sort((a, b) => {
+        const va = getSortValue(a.data, sortColumn);
+        const vb = getSortValue(b.data, sortColumn);
+        if (va < vb) return sortDir === "asc" ? -1 : 1;
+        if (va > vb) return sortDir === "asc" ?  1 : -1;
+        return 0;
+    });
+
+    if (!rows.length) {
+        toast("Nothing to export — adjust your filters.", "info");
+        return;
+    }
+
+    const headers = ["Date","Event","Requester","Email","Phone","Venue","Time","Status","Booking ID","Filed On","Notes"];
+
+    // Escapes a single CSV field: wraps in quotes if it contains comma, quote, or newline;
+    // doubles any internal quotes per RFC 4180.
+    const csvField = (val) => {
+        const s = String(val ?? "");
+        if (/[",\n]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
+        return s;
+    };
+
+    const lines = [headers.map(csvField).join(",")];
+
+    rows.forEach(b => {
+        const d = b.data;
+        const filedOn = d[COL.TIMESTAMP] ? new Date(d[COL.TIMESTAMP]).toLocaleString("en-PH") : "";
+        lines.push([
+            parseLocalDate(d[COL.DATE]).toLocaleDateString(),
+            d[COL.SUBJECT],
+            d[COL.NAME],
+            d[COL.EMAIL],
+            d[COL.PHONE],
+            d[COL.VENUE],
+            d[COL.TIME],
+            d[COL.STATUS],
+            d[COL.BOOKING_ID],
+            filedOn,
+            d[COL.NOTES]
+        ].map(csvField).join(","));
+    });
+
+    const csvContent = lines.join("\r\n");
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+    const url  = URL.createObjectURL(blob);
+
+    const dateTag = new Date().toISOString().split("T")[0];
+    const a = document.createElement("a");
+    a.href     = url;
+    a.download = `reservations_${dateTag}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+
+    toast(`Exported ${rows.length} reservation${rows.length === 1 ? "" : "s"}.`);
+}
+
+/* ── Approve / Reject from table ────────────────────────────── */
+async function adminAction(row, action) {
+    const reason = action === "reject"
+        ? prompt("Reason for rejection (required):")
+        : "";
+
+    if (action === "reject" && reason === null) return; // cancelled prompt
+    if (action === "reject" && !reason.trim()) {
+        toast("A rejection reason is required.", "error");
+        return;
+    }
+
+    setLoader(true, action === "approve" ? "Approving…" : "Rejecting…");
+    try {
+        const res  = await fetch(API_URL, {
+            method: "POST",
+            body: JSON.stringify({ action, row, reason })
+        });
+        const json = await res.json();
+        if (json.status === "success") {
+            toast(json.data);
+            await Promise.all([loadAdmin(), refreshCalendar()]);
+        } else {
+            toast(json.data || "Action failed.", "error");
+        }
+    } catch (e) {
+        toast("Request failed. Check your connection.", "error");
+    } finally {
+        setLoader(false);
+    }
+}
+
+/* ── Cancel from table ──────────────────────────────────────── */
+async function adminCancel(row) {
+    const reason = prompt("Reason for cancelling this approved booking (required):");
+    if (reason === null) return; // user dismissed the prompt
+    if (!reason.trim()) {
+        toast("A cancellation reason is required.", "error");
+        return;
+    }
+    if (!confirm(`Cancel this approved booking?\n\nReason: ${reason}\n\nIt will be removed from the Google Calendar.`)) return;
+
+    setLoader(true, "Cancelling…");
+    try {
+        const res  = await fetch(API_URL, {
+            method: "POST",
+            body: JSON.stringify({ action: "cancel_admin", row, reason: reason.trim() })
+        });
+        const json = await res.json();
+        if (json.status === "success") {
+            toast("Booking cancelled.");
+            await Promise.all([loadAdmin(), refreshCalendar()]);
+        } else {
+            toast(json.data || "Cancellation failed.", "error");
+        }
+    } catch (e) {
+        toast("Cancellation failed. Check your connection.", "error");
+    } finally {
+        setLoader(false);
+    }
+}
+
+/* ── Event detail modal actions (approve/reject/resched) ────── */
+async function modalAdminAction(action) {
+    if (!currentEvent) return;
+    // Find row from adminBookings by bookingId
+    const booking = adminBookings.find(b => b.data[COL.BOOKING_ID] === currentEvent.bookingId);
+    if (!booking) { toast("Booking row not found. Reload the Reservations page.", "error"); return; }
+    closeModal("eventModal");
+    await adminAction(booking.row, action);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   RESCHEDULE MODAL
+   ══════════════════════════════════════════════════════════════ */
+
+// Called from admin table
+function openAdminReschedModal(row, subject) {
+    reschedRow = row;
+    document.getElementById("reschedBookingLabel").textContent = `Event: ${subject}`;
+    document.getElementById("reschedDate").value   = "";
+    document.getElementById("reschedTime").value   = "AM";
+    document.getElementById("reschedReason").value = "";
+    openModal("reschedModal");
+}
+
+// Called from event detail modal (calendar view)
+function openReschedModal() {
+    if (!currentEvent) return;
+    const booking = adminBookings.find(b => b.data[COL.BOOKING_ID] === currentEvent.bookingId);
+    if (booking) {
+        reschedRow = booking.row;
+    } else {
+        // Fallback: we still have bookingId; backend handles by row, so warn admin
+        reschedRow = null;
+    }
+    document.getElementById("reschedBookingLabel").textContent = `Event: ${currentEvent.title}`;
+    document.getElementById("reschedDate").value   = "";
+    document.getElementById("reschedTime").value   = "AM";
+    document.getElementById("reschedReason").value = "";
+
+    // Hide the event modal without running its full reset — we're
+    // immediately transitioning into the reschedule flow and don't want
+    // to lose currentEvent/reschedRow context we just captured above.
+    document.getElementById("eventModal").classList.remove("open");
+
+    openModal("reschedModal");
+}
+
+async function submitReschedule() {
     const newDate = document.getElementById("reschedDate").value;
     const newTime = document.getElementById("reschedTime").value;
     const reason  = document.getElementById("reschedReason").value.trim();
 
-    if (!newDate) { alert("Please select a new date."); return; }
-    if (!reason) {
-        alert("Please briefly tell us why you're rescheduling — this helps the Property Department.");
-        document.getElementById("reschedReason").focus();
-        return;
-    }
+    if (!newDate) { toast("Please select a new date.", "error"); return; }
+    if (!reason)  { toast("Please provide a reason for rescheduling.", "error"); document.getElementById("reschedReason").focus(); return; }
+    if (!reschedRow) { toast("Row reference lost. Please reload the Reservations page.", "error"); return; }
 
+    const btn = document.getElementById("reschedSubmitBtn");
     btn.disabled    = true;
-    btn.textContent = "Sending…";
+    btn.textContent = "Saving…";
 
     try {
         const res  = await fetch(API_URL, {
             method: "POST",
-            body: JSON.stringify({
-                action:    "request_reschedule",
-                bookingId: currentEventInView.bookingId,
-                newDate,
-                newTime,
-                reason
-            })
+            body: JSON.stringify({ action: "reschedule", row: reschedRow, newDate, newTime, reason })
         });
         const json = await res.json();
         if (json.status === "success") {
-            alert("Request sent! The Property Department will review your reschedule request.");
-            closeDetails();
+            toast(json.data || "Rescheduled successfully.");
+            closeModal("reschedModal");
+            await Promise.all([loadAdmin(), refreshCalendar()]);
         } else {
-            alert("Request failed: " + (json.data || "Unknown error."));
+            toast(json.data || "Reschedule failed.", "error");
         }
     } catch (e) {
-        alert("Failed to send request. Please check your connection.");
+        toast("Reschedule failed. Check your connection.", "error");
     } finally {
         btn.disabled    = false;
-        btn.textContent = "Send Request";
+        btn.textContent = "Confirm Reschedule";
     }
 }
 
-/* ─────────────────────────────────────────────
-   MY BOOKINGS LOOKUP
-───────────────────────────────────────────── */
-
-function openMyBookingsModal() {
-    document.getElementById("lookupEmail").value = "";
-    document.getElementById("myBookingsResults").innerHTML = "";
-    document.getElementById("myBookingsModal").style.display = "flex";
+/* ══════════════════════════════════════════════════════════════
+   PAGE NAVIGATION
+   ══════════════════════════════════════════════════════════════ */
+function showPage(pageId, navEl) {
+    document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+    document.querySelectorAll(".nav-item").forEach(n => n.classList.remove("active"));
+    document.getElementById(pageId).classList.add("active");
+    navEl.classList.add("active");
+    if (pageId === "adminPage") loadAdmin();
 }
 
-function closeMyBookingsModal() {
-    document.getElementById("myBookingsModal").style.display = "none";
-
-    // Clear search input and results so the next open starts fresh
-    document.getElementById("lookupEmail").value = "";
-    document.getElementById("myBookingsResults").innerHTML = "";
-
-    const lookupBtn = document.getElementById("lookupSubmitBtn");
-    lookupBtn.disabled    = false;
-    lookupBtn.textContent = "Search";
-}
-
-// Maps a booking status to a small colored badge, consistent with the
-// admin dashboard's status-pill styling but self-contained here since
-// this page doesn't share admin.html's stylesheet.
-function statusBadge(status) {
-    const palette = {
-        PENDING:         ["#fef3c7", "#92400e"],
-        APPROVED:        ["#dcfce7", "#166534"],
-        REJECTED:        ["#fee2e2", "#991b1b"],
-        CANCELLED:       ["#f1f5f9", "#64748b"],
-        RESCHED_PENDING: ["#ffedd5", "#c2410c"]
-    };
-    const [bg, fg] = palette[status] || ["#f1f5f9", "#334155"];
-    const label = (status || "").replace(/_/g, " ");
-    return `<span style="background:${bg}; color:${fg}; padding:4px 12px; border-radius:999px;
-                  font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.04em;
-                  white-space:nowrap;">${esc(label)}</span>`;
-}
-
-async function lookupMyBookings() {
-    const email = document.getElementById("lookupEmail").value.trim();
-    const btn   = document.getElementById("lookupSubmitBtn");
-    const results = document.getElementById("myBookingsResults");
-
-    if (!email.toLowerCase().endsWith(ALLOWED_EMAIL_DOMAIN)) {
-        results.innerHTML = `<p style="color:#c0392b; font-size:0.875rem;">
-            Please enter your MSEUF email (e.g. you${ALLOWED_EMAIL_DOMAIN}).</p>`;
-        return;
-    }
-
-    btn.disabled    = true;
-    btn.textContent = "Searching…";
-    results.innerHTML = `<p style="color:#64748b; font-size:0.9rem;">Searching…</p>`;
-
-    try {
-        const res  = await fetch(API_URL, {
-            method: "POST",
-            body: JSON.stringify({ action: "lookup_bookings", email })
-        });
-        const json = await res.json();
-
-        if (json.status !== "success") {
-            results.innerHTML = `<p style="color:#c0392b; font-size:0.875rem;">
-                ${esc(json.data || "Something went wrong. Please try again.")}</p>`;
-            return;
-        }
-
-        const bookings = (json.data && json.data.bookings) || [];
-
-        if (!bookings.length) {
-            results.innerHTML = `<p style="color:#64748b; font-size:0.9rem;">
-                No bookings found for this email address.</p>`;
-            return;
-        }
-
-        results.innerHTML = bookings.map(b => {
-            const filedAt = b.submittedAt
-                ? new Date(b.submittedAt).toLocaleString("en-PH", {
-                      month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit"
-                  })
-                : "";
-            return `
-            <div style="border:1px solid #e2e8f0; border-radius:12px; padding:14px 16px; margin-bottom:10px;">
-                <div style="display:flex; justify-content:space-between; align-items:start; gap:10px;">
-                    <div>
-                        <strong style="color:var(--maroon);">${esc(b.subject) || "Untitled"}</strong><br>
-                        <span style="font-size:0.85rem; color:#64748b;">${esc(b.venue)} · ${esc(formatLocalDate(String(b.date).split("T")[0]))} · ${esc(b.time)}</span>
-                    </div>
-                    ${statusBadge(b.status)}
-                </div>
-                <div style="font-size:0.8rem; color:#94a3b8; margin-top:6px;">
-                    Booking ID: <code>${esc(b.bookingId)}</code>
-                    ${filedAt ? ` &middot; Filed: ${esc(filedAt)}` : ""}
-                </div>
-                ${b.notes ? `<div style="font-size:0.8rem; color:#92400e; margin-top:6px;">📝 ${esc(b.notes)}</div>` : ""}
-            </div>
-        `;
-        }).join("");
-
-    } catch (e) {
-        results.innerHTML = `<p style="color:#c0392b; font-size:0.875rem;">
-            Lookup failed. Please check your connection and try again.</p>`;
-    } finally {
-        btn.disabled    = false;
-        btn.textContent = "Search";
-    }
-}
-
-// Start
+/* ══════════════════════════════════════════════════════════════
+   BOOT
+   ══════════════════════════════════════════════════════════════ */
 init();
 </script>
 
-<footer class="official-footer">
-    <p class="footer-dept">MSEUF Property Department</p>
-    <p class="footer-contact">
-        For inquiries: marvin.nunez@mseuf.edu.ph &middot; (042) 710-2541 local 166 &middot; Office Hours: Mon–Fri, 8:00 AM – 5:00 PM
-    </p>
-    <p class="footer-meta">
-        © 2026 Manuel S. Enverga University Foundation. All rights reserved. &middot; Venue Booking System by CedieCodex
-    </p>
-</footer>
 </body>
 </html>
